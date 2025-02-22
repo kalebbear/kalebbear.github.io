@@ -1,5 +1,7 @@
 module.exports = {
+    // publicPath: './dist/',
     publicPath: './',
+    // mode: 'history',
     devServer: {
         disableHostCheck: true,
         port: 9000,
@@ -15,27 +17,6 @@ module.exports = {
         },
     },
     css: {
-        loaderOptions: {
-            less: {
-                lessOptions: {
-                    javascriptEnabled: true, // 如果你需要使用JavaScript表达式，例如`@`规则
-                },
-            },
-        },
-    },
-    chainWebpack: config => {
-        config.plugin('html')
-            .tap(args => {
-                args[0].title = '智慧其心';
-                return args;
-            })
-    }
-}
-module.exports = {
-
-    css: {
-
-
         loaderOptions: {
 
 
@@ -70,9 +51,57 @@ module.exports = {
 
 
         },
-
-
     },
+    chainWebpack: config => {
+        config.plugin('html')
+            .tap(args => {
+                args[0].title = '华赛';
+                return args;
+            })
+    }
+}
+// module.exports = {
+//     publicPath: 'https://kalebbear.github.io/dist/',
+//     css: {
 
 
-};
+//         loaderOptions: {
+
+
+//             less: {
+
+
+//                 // 这里可以添加全局的Less变量、混合等配置
+
+
+//                 lessOptions: {
+
+
+//                     modifyVars: {
+
+
+//                         // 配置全局变量
+
+
+//                         'primary-color': '#42b983',
+
+
+//                     },
+
+
+//                     javascriptEnabled: true,
+
+
+//                 },
+
+
+//             },
+
+
+//         },
+
+
+//     },
+
+
+// };
