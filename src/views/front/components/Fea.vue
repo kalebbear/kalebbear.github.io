@@ -1,0 +1,62 @@
+<template>
+    <div class="fea_wrap">
+        <div class="fea">
+            <div class="fea_dec">
+                <p>1,与商业目标挂钩，强调适用性</p>
+                <p>2,从问题出发，追求实效</p>
+                <p>3,关注员工的学习和成长</p>
+            </div>
+            <div class="fea_tit">华赛咨询服务特色
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'Banner',
+    components: {},
+    props: {},
+    watch: {},
+    data() {
+        return {
+            advList: [],
+        }
+    },
+
+    mounted() {},
+    beforeDestroy() {},
+    methods: {},
+}
+</script>
+
+<style lang="less" scoped>
+.fea_wrap {
+    margin: 0 auto;
+    max-width: 1360px;
+
+    .fea {
+        height: 500px;
+
+        background: url(../../../assets/images/ts.png);
+        background-repeat: round;
+        color: #fff;
+        position: relative;
+        .fea_dec {
+            position: absolute;
+            line-height: 44px;
+            font-style: italic;
+            font-size: 20px;
+            top: 80px;
+            left: 120px;
+        }
+        .fea_tit {
+            font-weight: 900;
+            font-size: 45px;
+            position: absolute;
+            right: 120px;
+            bottom: 100px;
+        }
+    }
+}
+</style>
