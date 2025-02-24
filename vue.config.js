@@ -1,5 +1,5 @@
 module.exports = {
-    // publicPath: './dist/',
+    publicPath: './dist/',
     publicPath: './',
     // mode: 'history',
     devServer: {

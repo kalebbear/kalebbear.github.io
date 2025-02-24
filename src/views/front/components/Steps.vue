@@ -78,7 +78,9 @@
                 <img :src="imageUrl" alt="" width="50px" height="50px" style="visibility: hidden;">
                 <div class="" style="text-align:center;width:260px;">
                     <!-- <img :src="require('@/assets/images/xq.png')" class="" width="80" height="80"> -->
-                    <div class="stepHeader" style="color:007DC6;font-size:20px;line-height:200px;text-align:center;cursor:pointer;">流程详情>></div>
+                    <div class="stepHeader" style="color:007DC6;font-size:20px;line-height:200px;text-align:center;cursor:pointer;"  @click="()=>{$router.push('/shCMMI')}">流程详情
+                        <img :src="require('@/assets/images/search.png')" width="20" style="margin:2px 0 0 0">
+                    </div>
 
                 </div>
             </div>
@@ -119,6 +121,7 @@ export default {
 <style lang="less" scoped>
 .wl {
     background: url(../../../assets/images/all_B.jpg);
+    background-repeat: round;
 }
 .steps_wrap {
     margin: 0 auto;

@@ -7,7 +7,7 @@
                 <el-col :span="16">
                     <el-card class="box-card">
                         <div slot="header" class="clearfix">
-                            <span>历年全球评估数量走势折线图
+                            <span>历年全球评估数量走势折线图<i style="color:red;">(暂缺)</i>
                             </span>
                             <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
                         </div>
@@ -19,7 +19,7 @@
                 <el-col :span="8">
                     <el-card class="box-card">
                         <div slot="header" class="clearfix">
-                            <span>去年中国各级别企业数量柱状图
+                            <span>去年中国各级别企业数量柱状图<i style="color:red;">(暂缺)</i>
                             </span>
                             <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
                         </div>
@@ -31,14 +31,15 @@
             </el-row>
 
         </div>
-        <Steps />
+        <Steps2 />
         <!-- <Fea /> -->
         <div class="" style="margin-top:20px">
             <el-card class="box-card wp1360">
                 <img :src="require('@/assets/images/hs.jpg')" alt="" width="100%" height="">
             </el-card>
         </div>
-        <ind />
+        <Hskh />
+        <Cjwt/>
         <Footer class="top" />
     </div>
 </template>
@@ -46,9 +47,10 @@
 <script>
 import Banner from './components/Banner'
 import Adv from './components/Adv'
-import Steps from './components/Steps'
+import Steps2 from './components/Steps2'
 import Fea from './components/Fea'
-import Ind from './components/Ind'
+import Hskh from './components/Hskh'
+import Cjwt from './components/Cjwt'
 import ProductCarousel from './components/ProductCarousel' // 引入新组件
 import { getAllCertificates, getFooterData } from '@/api/index' // 引入API方法
 export default {
@@ -57,9 +59,10 @@ export default {
         Banner, // 轮播图
         ProductCarousel, // 横向商品
         Adv,
-        Steps,
+        Steps2,
         Fea,
-        Ind,
+        Hskh,
+        Cjwt
     },
     props: {},
     watch: {},

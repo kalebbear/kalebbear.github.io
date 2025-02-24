@@ -23,7 +23,7 @@
                 <div>
                     <div class="ind_info">
                         <p class="big_font">{{swiperList[banner_index].label}}行业解决方案</p>
-                        <p class="small_font">研发管理提升之道，过程改进指导模型、研发管理国际标准</p>
+                        <p class="small_font">研发管理提升之道，过程改进指导模型、研发管理国际标准<i style="color:blue;">(不同行业对应不同文案？)</i></p>
                         <!-- <div class="read_more">了解CMMI</div> -->
                     </div>
                 </div>
@@ -111,7 +111,9 @@ export default {
             this.banner_index = i
             this.$refs.banner.setActiveItem(i)
         },
-        readMore() {},
+        readMore() {
+            this.$router.push('/hy')
+        },
         bannerChange(i) {
             this.banner_index = i
         },

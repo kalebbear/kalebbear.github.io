@@ -1,19 +1,19 @@
 <template>
     <div class="banner_wrap">
-        <el-carousel :interval="5000"  :height="carouselHeight" :initial-index="banner_index" arrow="nerver" indicator-position="none">
+        <el-carousel :interval="5000" :height="carouselHeight" :initial-index="banner_index" arrow="nerver" indicator-position="none">
             <el-carousel-item v-for="(item, index) in swiperList" :key="index">
                 <el-image :src="item.imageUrl" alt="" style="width:100%;height:100%" fit="cover" @error="handleImageError" />
                 <div>
-                    <div class="banner_info" v-if="index===0">
+                    <div class="banner_info" v-if="(index===0 &&type=== 0)||type===1">
                         <p class="big_font">Capability Maturity Model (Integration)</p>
                         <p class="big_font">能力成熟度模型（集成）</p>
                         <p class="small_font">研发管理提升之道，过程改进指导模型、研发管理国际标准</p>
-                        <div class="read_more">了解CMMI</div>
+                        <div class="read_more" @click="()=>{$router.push('/cmmijs')}">了解CMMI</div>
                     </div>
-                    <div class="banner_info" v-if="index===1">
+                    <div class="banner_info" v-if="(index===1&&type=== 0)||type===2">
                         <p class="big_font">CMMI资质认证</p>
                         <p class="small_font" style="margin-top:20px">研发管理国际标准、研发能力水平认定、研发类供应商的必备资质</p>
-                        <div class="read_more">【查看更多】</div>
+                        <div class="read_more" @click="()=>{$router.push('/whatCMMI')}">【查看更多】</div>
                     </div>
                 </div>
 
@@ -31,7 +31,7 @@ export default {
     name: 'Banner',
     components: {},
     props: {
-        type: 0
+        type: 0,
     },
     watch: {},
     data() {

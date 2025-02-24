@@ -1,14 +1,31 @@
 <template>
     <div>
         <Nav />
-        <Banner :type="1"/>
+        <Banner :type="1" />
         <div class="contain_center">
             <Adv />
 
         </div>
         <Steps />
+        <!-- <el-card class="top"> -->
         <Fea />
+        <!-- </el-card> -->
+
         <ind />
+        <div class="wp1360">
+            <el-card class="top" style="background:#eee;">
+                <div style="display:flex;">
+                    <img src="@/assets/images/fa.jpg" alt="官方商城" class="service-icon" height="420" width="" />
+                    <div style="padding:20px;position:relative">
+                        <div style="font-size:36px; text-align:center;">典型案例</div>
+                        <div style="font-size:16px; text-align:left;text-indent: 2rem;color: #666;line-height: 32px;">
+                            某通讯电子产品研发企业实施IPD三年多来，取得了一定的成效。在产品层面已有了良好的总体规划和掌控，但对专业领域级别工作的可控性不强，经常出现进度一再延期、产品质量不能达标等问题。为了进一步提升其研发管理水平，决定导入CMMI，巩固和深化其IPD实施成效。
+                        </div>
+                        <div style="font-size:16px; text-align:right;color: #666;line-height: 32px;cursor:pointer;" @click="$router.push('/al')">更多>></div>
+                    </div>
+                </div>
+            </el-card>
+        </div>
         <!-- <div class="container">
             <el-breadcrumb separator="/" class="top">
                 <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>

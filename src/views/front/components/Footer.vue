@@ -26,13 +26,13 @@
 
 <script>
 import { getFooterData } from '@/api/index'
-import { menuList } from '@/config/index'
+import { footList } from '@/config/index'
 export default {
     name: 'Footer',
 
     data() {
         return {
-            footList: menuList,
+            footList: footList,
             footerData: {
                 phone: '123-456-7890',
                 email: 'example@example.com',

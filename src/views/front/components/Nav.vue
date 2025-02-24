@@ -5,7 +5,7 @@
                 <img src="@/assets/images/fav.png" alt="logo" height="50px" width="50px">
                 <div>
                     <p class="cn">深圳华赛信息咨询有限公司</p>
-                    <p class="en">Shenzhen Huasai lnformation Gonsulting Co..Ltd</p>
+                    <p class="en">Shenzhen Huasai lnformation Gonsulting Co.,Ltd</p>
                 </div>
                 <!-- <div v-else style="font-size:26px;margin-right:50px" @click="$router.push('/home')">logo</div> -->
 

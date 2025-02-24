@@ -36,6 +36,102 @@ const menuList = [
     },
     {
         name: '关于华赛',
+        path: '/aboutHS',
+        subMenu: [
+            {
+                name: '了解华赛',
+                path: '/aboutHS'
+            },
+            {
+                name: '行业覆盖',
+                path: '/hy'
+            },
+            {
+                name: '典型案例',
+                path: '/al'
+            },
+        ],
+    },
+    {
+        name: '华赛业务',
+        path: '/consultingService',
+        subMenu: [
+            {
+                name: '咨询服务',
+                path: '/consultingService'
+            },
+            {
+                name: '培训服务',
+                path: '/noPage'
+            },
+            {
+                name: '认证服务',
+                path: '/noPage'
+            },
+        ],
+    },
+    {
+        name: '华赛研究',
+        path: '/noPage1',
+        subMenu: [
+            {
+                name: '华赛工具',
+                path: '/noPage'
+            },
+            {
+                name: '华赛文库',
+                path: '/noPage'
+            },
+            {
+                name: '参考资料',
+                path: '/noPage'
+            },
+        ],
+    },
+    {
+        name: '社区建设',
+        path: '/noPage2',
+        subMenu: [
+            {
+                name: '社区活动',
+                path: '/noPage'
+            },
+            {
+                name: '上午合作',
+                path: '/noPage'
+            },
+            {
+                name: '廉洁申明',
+                path: '/noPage'
+            },
+            {
+                name: '信息安全',
+                path: '/noPage'
+            },
+            {
+                name: '服务政策',
+                path: '/noPage'
+            },
+        ],
+    },
+    {
+        name: '联系我们',
+        path: '/noPage3',
+        subMenu: [
+            {
+                name: '在线方式',
+                path: '/noPage'
+            },
+            {
+                name: '在线客服',
+                path: '/noPage'
+            },
+        ],
+    },
+]
+const footList = [
+    {
+        name: '关于华赛',
         path: '/ProductService',
         subMenu: [
             {
@@ -129,9 +225,9 @@ const menuList = [
         ],
     },
 ]
-
 export {
     baseUrl,
-    menuList
+    menuList,
+    footList
 }
 

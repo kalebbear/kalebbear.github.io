@@ -62,6 +62,54 @@ const routes = [
             title: '暂无'
         }
     },
+    {
+        path: '/cmmijs',
+        name: 'cmmijs',
+        component: () => import('@/views/cmmi/cmmijs.vue'),
+        meta: {
+            title: '什么是CMMI'
+        }
+    },
+    {
+        path: '/whatCMMI',
+        name: 'whatCMMI',
+        component: () => import('@/views/cmmi/what.vue'),
+        meta: {
+            title: '什么是CMMI'
+        }
+    },
+    {
+        path: '/shCMMI',
+        name: 'shCMMI',
+        component: () => import('@/views/cmmi/shCMMI.vue'),
+        meta: {
+            title: '实施CMMI'
+        }
+    },
+    {
+        path: '/hy',
+        name: 'hy',
+        component: () => import('@/views/cmmi/hy.vue'),
+        meta: {
+            title: '覆盖行业'
+        }
+    },
+    {
+        path: '/al',
+        name: 'al',
+        component: () => import('@/views/cmmi/al.vue'),
+        meta: {
+            title: '客户案例'
+        }
+    },
+    {
+        path: '/pglc',
+        name: 'al',
+        component: () => import('@/views/cmmi/pglc.vue'),
+        meta: {
+            title: '评估流程'
+        }
+    },
     // 华赛服务consultingService
     {
         path: '/consultingService',

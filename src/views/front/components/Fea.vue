@@ -1,5 +1,6 @@
 <template>
-    <div class="fea_wrap">
+    <div class="fea_wrap" style="margin-top:20px">
+        <!-- <el-card class="top"> -->
         <div class="fea">
             <div class="fea_dec">
                 <p>1,与商业目标挂钩，强调适用性</p>
@@ -9,6 +10,7 @@
             <div class="fea_tit">华赛咨询服务特色
             </div>
         </div>
+        <!-- </el-card> -->
     </div>
 </template>
 
