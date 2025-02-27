@@ -39,12 +39,21 @@ const menuList = [
         path: '/aboutHS',
         subMenu: [
             {
-                name: '了解华赛',
+                name: '华赛简介',
                 path: '/aboutHS'
             },
             {
+                name: '咨询团队',
+                path: '/team'
+            },
+           
+            {
                 name: '行业覆盖',
                 path: '/hy'
+            },
+            {
+                name: '客户评价',
+                path: '/khpj'
             },
             {
                 name: '典型案例',

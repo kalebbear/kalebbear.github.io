@@ -55,6 +55,22 @@ const routes = [
         }
     },
     {
+        path: '/team',
+        name: 'team',
+        component: () => import('@/views/about/team.vue'),
+        meta: {
+            title: '咨询团队'
+        }
+    },
+    {
+        path: '/khpj',
+        name: 'team',
+        component: () => import('@/views/about/khpj.vue'),
+        meta: {
+            title: '客户评价'
+        }
+    },
+    {
         path: '/noPage',
         name: 'noPage',
         component: () => import('@/views/about/XXX.vue'),

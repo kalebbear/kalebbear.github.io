@@ -20,12 +20,12 @@
             </el-card>
             <el-card class="top">
                 <div class="left">
-                    <img class="top5 full-image" src="../../assets/加盟优势.png" />
+                    <!-- <img class="top5 full-image" src="../../assets/加盟优势.png" /> -->
                 </div>
             </el-card>
             <el-card class="top">
                 <div class="left">
-                    <img class="top5 full-image" src="../../assets/加盟流程.png" />
+                    <!-- <img class="top5 full-image" src="../../assets/加盟流程.png" /> -->
                 </div>
             </el-card>
             <el-card class="top">
@@ -65,32 +65,36 @@ export default {
     data() {
         const validatePhone = (rule, value, callback) => {
             if (value === '') {
-                callback(new Error('请输入手机号码'));
+                callback(new Error('请输入手机号码'))
             } else if (!/^1[3-9]\d{9}$/.test(value)) {
-                callback(new Error('请输入正确的手机号码'));
+                callback(new Error('请输入正确的手机号码'))
             } else {
-                callback();
+                callback()
             }
-        };
+        }
         return {
             form: {
                 name: '',
                 contactInfo: '',
-                description: ''
+                description: '',
             },
             rules: {
                 name: [
-                    { required: true, message: '请输入姓名', trigger: 'blur' }
+                    { required: true, message: '请输入姓名', trigger: 'blur' },
                 ],
                 contactInfo: [
-                    { required: true, message: '请输入手机号码', trigger: 'blur' },
-                    { validator: validatePhone, trigger: 'blur' }
+                    {
+                        required: true,
+                        message: '请输入手机号码',
+                        trigger: 'blur',
+                    },
+                    { validator: validatePhone, trigger: 'blur' },
                 ],
                 description: [
-                    { required: true, message: '请输入备注', trigger: 'blur' }
-                ]
-            }
-        };
+                    { required: true, message: '请输入备注', trigger: 'blur' },
+                ],
+            },
+        }
     },
 
     methods: {
@@ -101,30 +105,30 @@ export default {
                         name: this.form.name,
                         contactInfo: this.form.contactInfo,
                         description: this.form.description,
-                        isDeleted: false
-                    };
+                        isDeleted: false,
+                    }
 
                     addBusiness(businessData)
-                        .then(response => {
-                            console.log('API请求成功:', response);
-                            this.$message.success('申请提交成功');
-                            this.resetForm(formName);
+                        .then((response) => {
+                            console.log('API请求成功:', response)
+                            this.$message.success('申请提交成功')
+                            this.resetForm(formName)
                         })
-                        .catch(error => {
-                            console.error('API请求失败:', error);
-                            this.$message.error('申请提交失败');
-                        });
+                        .catch((error) => {
+                            console.error('API请求失败:', error)
+                            this.$message.error('申请提交失败')
+                        })
                 } else {
-                    console.log('表单验证失败');
-                    return false;
+                    console.log('表单验证失败')
+                    return false
                 }
-            });
+            })
         },
         resetForm(formName) {
-            this.$refs[formName].resetFields();
-        }
-    }
-};
+            this.$refs[formName].resetFields()
+        },
+    },
+}
 </script>
 
 <style lang="less" scoped>
@@ -201,7 +205,7 @@ export default {
     display: block;
     width: 50px;
     height: 2px;
-    background: #409EFF; // 使用主题色
+    background: #409eff; // 使用主题色
     margin: 10px auto 0;
 }
 </style>
