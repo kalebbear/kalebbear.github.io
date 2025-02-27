@@ -137,6 +137,42 @@ const routes = [
 
     },
     {
+        path: '/gkkc',
+        name: 'gkkc',
+        component: () => import('@/views/service/gkkc.vue'),
+        meta: {
+            title: '公开课程'
+        }
+
+    },
+    {
+        path: '/kcml',
+        name: 'kcml',
+        component: () => import('@/views/service/kcml.vue'),
+        meta: {
+            title: '课程目录'
+        }
+
+    },
+    {
+        path: '/qynx',
+        name: 'qynx',
+        component: () => import('@/views/service/qynx.vue'),
+        meta: {
+            title: '企业内训'
+        }
+
+    },
+    {
+        path: '/training',
+        name: 'training',
+        component: () => import('@/views/service/training.vue'),
+        meta: {
+            title: '培训服务'
+        }
+
+    },
+    {
         path: '/cmmi',
         name: 'cmmi',
         component: () => import('@/views/front/CMMI.vue'),

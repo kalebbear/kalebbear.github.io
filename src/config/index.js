@@ -71,7 +71,7 @@ const menuList = [
             },
             {
                 name: '培训服务',
-                path: '/noPage'
+                path: '/training'
             },
             {
                 name: '认证服务',
