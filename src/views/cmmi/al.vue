@@ -4,10 +4,10 @@
         <Banner />
         <Bred :mdata="[
             {name:'首页',path:'/home'},
-            {name:'案例解析',path:''}]" />
+            {name:'基于CMMI的过程改进案例解析',path:''}]" />
         <div class="wp1360">
             <div class="title hsHeader">
-                <h3>基于CMMI的过程改进案例解析</h3>
+                <!-- <h3>基于CMMI的过程改进案例解析</h3> -->
             </div>
             <div class="cont">
                 <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">某通讯电子产品研发企业实施IPD三年多来，取得了一定的成效。在产品层面已有了良好的总体规划和掌控，但对专业领域级别工作的可控性不强，经常出现进度一再延期、产品质量不能达标等问题。为了进一步提升其研发管理水平，决定导入CMMI，巩固和深化其IPD实施成效。</span></p>

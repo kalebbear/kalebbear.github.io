@@ -206,6 +206,22 @@ const routes = [
         }
     },
     {
+        path: '/sslc',
+        name: 'sslc',
+        component: () => import('@/views/tools/sslc.vue'),
+        meta: {
+            title: '实施流程'
+        }
+    },
+    {
+        path: '/gjjs',
+        name: 'gjjs',
+        component: () => import('@/views/tools/gjjs.vue'),
+        meta: {
+            title: '工具介绍'
+        }
+    },
+    {
         path: '/hsdocs',
         name: 'hsdocs',
         component: () => import('@/views/tools/hsdocs.vue'),

@@ -4,10 +4,10 @@
         <Banner />
         <Bred :mdata="[
             {name:'首页',path:'/home'},
-            {name:'实施CMMI',path:''}]" />
+            {name:'华赛是如何为客户实施CMMI的',path:''}]" />
         <div class="wp1360">
             <div class="title hsHeader">
-                <h3>华赛是如何为客户实施CMMI的?</h3>
+                <!-- <h3>华赛是如何为客户实施CMMI的?</h3> -->
             </div>
             <div class="cont">
                 <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">华赛公司基于SEI的IDEAL模型总结了一套CMMI实施方法论，其最大的特色是适合国内实际情况，能够最大程度确保过程改进不会流于形式，真正为企业带来实效。华赛咨询服务坚持以“人”为核心，从实际问题出发提升企业研发能力，促使企业商业目标的达成。</span></p>

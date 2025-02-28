@@ -8,7 +8,7 @@
             {name:'企业内训',path:''}]" />
         <div class="wp1360">
             <div class="hsHeader">
-                <h3>企业内训</h3>
+                <!-- <h3>企业内训</h3> -->
             </div>
             <el-collapse accordion v-model="active">
                 <el-collapse-item :name="1">

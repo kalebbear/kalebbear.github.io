@@ -8,7 +8,7 @@
             {name:'客户评价',path:''}]" />
         <div class="wp1360">
             <div class="hsHeader">
-                <h3>客户评价</h3>
+                <!-- <h3>客户评价</h3> -->
             </div>
             <div class="cont newAboutUs">
                 <el-collapse v-model="active">

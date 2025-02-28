@@ -7,7 +7,7 @@
             {name:'什么是CMMI',path:''}]" />
         <div class="wp1360">
             <div class="title hsHeader">
-                <h3>什么是CMMI资质认证?</h3>
+                <!-- <h3>什么是CMMI资质认证?</h3> -->
             </div>
             <div class="cont">
                 <p style="margin-top: 1em; margin-bottom: 1em; padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(51, 51, 51); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal; unicode-bidi: embed;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">　　</span><a class="image" title="CMMI" style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);" href="http://"><img alt="CMMI" width="550" height="330" longdesc="http://www.huasaiinfo.com/images/cmmilogo.jpg" src="http://www.huasaiinfo.com/images/cmmilogo.jpg" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></a></p>

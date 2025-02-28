@@ -7,7 +7,7 @@
             {name:'覆盖行业',path:''}]" />
         <div class="wp1360">
             <div class="hsHeader">
-                <h3>覆盖行业</h3>
+                <!-- <h3>覆盖行业</h3> -->
             </div>
             <div class="cont newAboutUs">
 

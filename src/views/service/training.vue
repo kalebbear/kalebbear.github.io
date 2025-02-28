@@ -2,9 +2,13 @@
     <div class="brands-container">
         <Nav />
         <Banner />
+        <Bred :mdata="[
+            {name:'首页',path:'/home'},
+            {name:'培训服务',path:'/training'},
+            ]" />
         <div class="wp1360">
             <div class="hsHeader">
-                <h3>培训服务</h3>
+                <!-- <h3>培训服务</h3> -->
             </div>
             <div style="display:flex;">
                 <div class="fwwrap" @click="$router.push('/qynx')">

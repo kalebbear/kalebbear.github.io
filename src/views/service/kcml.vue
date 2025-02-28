@@ -8,7 +8,7 @@
             {name:'课程目录',path:''}]" />
         <div class="wp1360">
             <div class="hsHeader">
-                <h3>课程目录</h3>
+                <!-- <h3>课程目录</h3> -->
             </div>
             <el-row :gutter="20">
                 <el-col :span="12">

@@ -8,7 +8,7 @@
             {name:'公开课程',path:''}]" />
         <div class="wp1360">
             <div class="hsHeader">
-                <h3>公开课程</h3>
+                <!-- <h3>公开课程</h3> -->
             </div>
             <el-collapse accordion v-model="active">
                 <el-collapse-item :name="1">
