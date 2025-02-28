@@ -2,6 +2,10 @@
     <div class="brands-container">
         <Nav />
         <Banner />
+        <Bred :mdata="[
+            {name:'首页',path:'/home'},
+            {name:'华赛业务',path:''},
+            {name:'咨询服务',path:''}]" />
         <div class="wp1360">
 
             <div class="title hsHeader">
@@ -335,6 +339,7 @@ export default {
     name: 'Brands',
     data() {
         return {
+            active: '',
             drawer: false,
             drawerType: 1,
         }

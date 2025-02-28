@@ -81,19 +81,19 @@ const menuList = [
     },
     {
         name: '华赛研究',
-        path: '/noPage1',
+        path: '/',
         subMenu: [
             {
                 name: '华赛工具',
-                path: '/noPage'
+                path: '/hstools'
             },
             {
                 name: '华赛文库',
-                path: '/noPage'
+                path: '/hsdocs'
             },
             {
                 name: '参考资料',
-                path: '/noPage'
+                path: '/hsdatas'
             },
         ],
     },

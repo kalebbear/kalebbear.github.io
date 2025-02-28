@@ -2,6 +2,9 @@
     <div class="brands-container">
         <Nav />
         <Banner />
+        <Bred :mdata="[
+            {name:'首页',path:'/home'},
+            {name:'CMMI资质认证流程',path:''}]" />
         <div class="wp1360">
             <div class="title hsHeader">
                 <h3>CMMI资质认证流程</h3>

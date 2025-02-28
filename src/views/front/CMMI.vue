@@ -35,7 +35,7 @@
         <!-- <Fea /> -->
         <div class="" style="margin-top:20px">
             <el-card class="box-card wp1360">
-                <img :src="require('@/assets/images/hs.jpg')" alt="" width="100%" height="">
+                <img :src="require('@/assets/images/hs.jpg')" alt="" width="" height="">
             </el-card>
         </div>
         <Hskh />

@@ -2,6 +2,10 @@
     <div class="brands-container">
         <Nav />
         <Banner />
+        <Bred :mdata="[
+            {name:'首页',path:'/home'},
+            {name:'培训服务',path:'/training'},
+            {name:'企业内训',path:''}]" />
         <div class="wp1360">
             <div class="hsHeader">
                 <h3>企业内训</h3>

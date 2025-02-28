@@ -196,6 +196,34 @@ const routes = [
             title: '招商'
         }
     },
+    // 工具
+    {
+        path: '/hstools',
+        name: 'hstools',
+        component: () => import('@/views/tools/hstools.vue'),
+        meta: {
+            title: '华赛工具'
+        }
+    },
+    {
+        path: '/hsdocs',
+        name: 'hsdocs',
+        component: () => import('@/views/tools/hsdocs.vue'),
+        meta: {
+            title: '华赛文库'
+        }
+    },
+    {
+        path: '/hsdatas',
+        name: 'hstools',
+        component: () => import('@/views/tools/hsdatas.vue'),
+        meta: {
+            title: '参考资料'
+        }
+    },
+
+
+
     {
         path: '/about',
         name: 'About',

@@ -2,6 +2,9 @@
     <div class="brands-container">
         <Nav />
         <Banner />
+        <Bred :mdata="[
+            {name:'首页',path:'/home'},
+            {name:'实施CMMI',path:''}]" />
         <div class="wp1360">
             <div class="title hsHeader">
                 <h3>华赛是如何为客户实施CMMI的?</h3>

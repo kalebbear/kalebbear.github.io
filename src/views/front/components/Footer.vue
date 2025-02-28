@@ -48,13 +48,13 @@ export default {
 
     mounted() {
         // 获取缓存的数据
-        const cachedFooterData = localStorage.getItem('footerData')
-        // 如果有缓存的数据，则使用缓存的数据
-        if (cachedFooterData) {
-            this.footerData = JSON.parse(cachedFooterData)
-        } else {
-            this.fetchFooterData()
-        }
+        // const cachedFooterData = localStorage.getItem('footerData')
+        // // 如果有缓存的数据，则使用缓存的数据
+        // if (cachedFooterData) {
+        //     this.footerData = JSON.parse(cachedFooterData)
+        // } else {
+        //     this.fetchFooterData()
+        // }
     },
 
     methods: {

@@ -2,6 +2,10 @@
     <div class="brands-container">
         <Nav />
         <Banner />
+        <Bred :mdata="[
+            {name:'首页',path:'/home'},
+            {name:'关于华赛',path:''},
+            {name:'覆盖行业',path:''}]" />
         <div class="wp1360">
             <div class="hsHeader">
                 <h3>行业覆盖</h3>
