@@ -2,16 +2,18 @@
     <div>
         <Nav />
         <Banner :type="1" />
-        <div class="contain_center">
-            <Adv />
 
-        </div>
         <Steps />
         <!-- <el-card class="top"> -->
         <Fea />
         <!-- </el-card> -->
 
         <ind />
+        <div>
+            <!-- <Adv /> -->
+            <Jxal />
+        </div>
+
         <div class="wp1360">
             <el-card class="top" style="background:#eee;">
                 <div style="display:flex;">
