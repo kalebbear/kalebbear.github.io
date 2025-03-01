@@ -2,9 +2,12 @@
     <div class="brands-container">
         <Nav />
         <Banner />
+        <Bred :mdata="[
+            {name:'首页',path:'/home'},
+            {name:'什么是CMMI能力成熟度模型',path:''}]" />
         <div class="wp1360">
             <div class="title hsHeader">
-                <h3>什么是CMMI能力成熟度模型?</h3>
+                <!-- <h3>什么是CMMI能力成熟度模型?</h3> -->
             </div>
             <div class="cont">
                 <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">一、CMMI的来源</span></p>

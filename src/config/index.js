@@ -46,7 +46,7 @@ const menuList = [
                 name: '咨询团队',
                 path: '/team'
             },
-           
+
             {
                 name: '行业覆盖',
                 path: '/hy'
@@ -63,7 +63,7 @@ const menuList = [
     },
     {
         name: '华赛业务',
-        path: '/consultingService',
+        path: '',
         subMenu: [
             {
                 name: '咨询服务',
@@ -75,13 +75,13 @@ const menuList = [
             },
             {
                 name: '认证服务',
-                path: '/noPage'
+                path: '/rzservice'
             },
         ],
     },
     {
         name: '华赛研究',
-        path: '/',
+        path: '',
         subMenu: [
             {
                 name: '华赛工具',
@@ -99,14 +99,14 @@ const menuList = [
     },
     {
         name: '社区建设',
-        path: '/noPage2',
+        path: '',
         subMenu: [
             {
                 name: '社区活动',
                 path: '/noPage'
             },
             {
-                name: '上午合作',
+                name: '商务合作',
                 path: '/noPage'
             },
             {
@@ -125,11 +125,11 @@ const menuList = [
     },
     {
         name: '联系我们',
-        path: '/noPage3',
+        path: '',
         subMenu: [
             {
-                name: '在线方式',
-                path: '/noPage'
+                name: '联系方式',
+                path: '/phone'
             },
             {
                 name: '在线客服',

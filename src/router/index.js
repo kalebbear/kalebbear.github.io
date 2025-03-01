@@ -173,6 +173,45 @@ const routes = [
 
     },
     {
+        path: '/rzservice',
+        name: 'rzservice',
+        component: () => import('@/views/rzservice/rzservice.vue'),
+        meta: {
+            title: '认证服务'
+        }
+
+    },
+
+    {
+        path: '/condition',
+        name: 'condition',
+        component: () => import('@/views/rzservice/condition.vue'),
+        meta: {
+            title: 'CMMI资质申请条件'
+        }
+
+    },
+
+    {
+        path: '/flow',
+        name: 'flow',
+        component: () => import('@/views/rzservice/flow.vue'),
+        meta: {
+            title: 'CMMI认证流程'
+        }
+
+    },
+    {
+        path: '/whatis',
+        name: 'whatis',
+        component: () => import('@/views/rzservice/whatis.vue'),
+        meta: {
+            title: '什么事CMMI资质'
+        }
+
+    },
+
+    {
         path: '/cmmi',
         name: 'cmmi',
         component: () => import('@/views/front/CMMI.vue'),
@@ -248,7 +287,14 @@ const routes = [
             title: '关于我们'
         }
     },
-
+    {
+        path: '/phone',
+        name: 'phone',
+        component: () => import('@/views/about/phone.vue'),
+        meta: {
+            title: '联系我们'
+        }
+    },
     {
         path: '/admin',
         name: 'Admin',
