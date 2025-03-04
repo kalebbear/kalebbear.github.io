@@ -36,7 +36,7 @@
 
             </div>
             <div style="width:50%;margin-left:40px;background:#eee;padding:40px;">
-                <img src="@/assets/images/banner1.jpg" alt="" width="400" height="200" style="margin:60px">
+                <img :src="require(`@/assets${pic}`)" alt="" width="400" height="200" style="margin:60px">
             </div>
         </div>
     </div>
@@ -50,6 +50,7 @@ export default {
     data() {
         return {
             navList: menuList,
+            pic: '/images/banner1.jpg',
             showSub: false,
             subList: [{}],
             register: {},
@@ -83,6 +84,9 @@ export default {
         menuChange(item) {
             if (item.subMenu) {
                 this.subList = item.subMenu
+                if (item.pic) {
+                    this.pic = item.pic
+                }
                 this.showSub = true
             } else {
                 this.showSub = false
@@ -93,7 +97,9 @@ export default {
             this.showSub = false
         },
         routeto(path) {
-            this.$router.push(path)
+            if (path) {
+                this.$router.push(path)
+            }
         },
         login(e) {
             if (e == 'add') {
@@ -108,9 +114,11 @@ export default {
             })
         },
         toDetail(item, i) {
-            this.$router.push({
-                path: item.path,
-            })
+            if (item.path) {
+                this.$router.push({
+                    path: item.path,
+                })
+            }
         },
     },
 }

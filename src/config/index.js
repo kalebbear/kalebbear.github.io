@@ -36,7 +36,8 @@ const menuList = [
     },
     {
         name: '关于华赛',
-        path: '/aboutHS',
+        pic: '/images/wbq/p5.webp',
+        path: '',
         subMenu: [
             {
                 name: '华赛简介',
@@ -64,6 +65,7 @@ const menuList = [
     {
         name: '华赛业务',
         path: '',
+        pic: '/images/wbq/p6.webp',
         subMenu: [
             {
                 name: '咨询服务',
@@ -82,6 +84,7 @@ const menuList = [
     {
         name: '华赛研究',
         path: '',
+        pic: '/images/wbq/p9.jpg',
         subMenu: [
             {
                 name: '华赛工具',
@@ -99,6 +102,7 @@ const menuList = [
     },
     {
         name: '社区建设',
+        pic: '/images/wbq/p1.webp',
         path: '',
         subMenu: [
             {
@@ -125,17 +129,17 @@ const menuList = [
     },
     {
         name: '联系我们',
-        path: '',
-        subMenu: [
-            {
-                name: '联系方式',
-                path: '/phone'
-            },
-            {
-                name: '在线客服',
-                path: '/noPage'
-            },
-        ],
+        path: 'phone',
+        // subMenu: [
+        //     {
+        //         name: '联系方式',
+        //         path: '/phone'
+        //     },
+        //     {
+        //         name: '在线客服',
+        //         path: '/noPage'
+        //     },
+        // ],
     },
 ]
 const footList = [

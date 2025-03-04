@@ -39,11 +39,11 @@ export default {
             banner_index: 0,
             swiperList: [
                 {
-                    imageUrl: require('@/assets/images/banner1.jpg'),
+                    imageUrl: require('@/assets/images/wbq/dl.png'),
                     index: 0,
                 },
                 {
-                    imageUrl: require('@/assets/images/banner3.jpg'),
+                    imageUrl: require('@/assets/images/wbq/zx.png'),
                     index: 1,
                 },
                 // {

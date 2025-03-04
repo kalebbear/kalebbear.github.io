@@ -2,6 +2,9 @@
     <div>
         <Nav />
         <Banner :type="1" />
+        <div class="wp1360">
+            <Adv />
+        </div>
 
         <Steps />
         <!-- <el-card class="top"> -->
@@ -14,8 +17,8 @@
             <Jxal />
         </div>
 
-        <div class="wp1360">
-            <el-card class="top" style="background:#eee;">
+        <div class="wp1360" style="overflow:visible;">
+            <el-card class="top" style="background:#;">
                 <div style="display:flex;">
                     <img src="@/assets/images/fa.jpg" alt="官方商城" class="service-icon" height="420" width="" />
                     <div style="padding:20px;position:relative">
@@ -28,57 +31,6 @@
                 </div>
             </el-card>
         </div>
-        <!-- <div class="container">
-            <el-breadcrumb separator="/" class="top">
-                <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-                <el-breadcrumb-item>当前</el-breadcrumb-item>
-            </el-breadcrumb>
-            <div class="introduce">
-                <h1 class="center">{{ homeTitle }}</h1>
-                <p class="center">{{ homeDescription }}</p>
-            </div>
-            <el-card class="top">
-                <div class="info-services">
-                    <div class="service" @click="showQRCode">
-                        <img src="@/assets/images/icon.png" alt="官方商城" class="service-icon" />
-                        <h3>官方商城</h3>
-                        <p>总部直销 优惠畅享</p>
-                    </div>
-                    <div class="service" @click="navigateTo('/Business')">
-                        <img src="@/assets/images/icon.png" alt="招商加盟" class="service-icon" />
-                        <h3>招商加盟</h3>
-                        <p>稀缺经销席位</p>
-                    </div>
-                    <div class="service" @click="showHotline">
-                        <img src="@/assets/images/icon.png" alt="服务支持" class="service-icon" />
-                        <h3>服务支持</h3>
-                        <p>热线400-887-9882</p>
-                    </div>
-
-                </div>
-            </el-card>
-            <el-card class="top">
-                <div class="scrolling-container">
-                    <div class="scrolling-content" v-for="certificate in certificates" :key="certificate.id">
-                        <img :src="certificate.imageUrl" :alt="certificate.name" class="certificate-image" />
-                        <h3>{{ certificate.name }}</h3>
-                        <p>{{ certificate.description }}</p>
-                    </div>
-                </div>
-            </el-card>
-        </div> -->
-        <!-- <el-dialog :visible.sync="hotlineVisible" title="服务支持">
-            <div class="hotline-container">
-                <p class="hotline-text">热线电话: 400-887-9882</p>
-                <el-button type="primary" @click="copyToClipboard('400-887-9882')">复制</el-button>
-            </div>
-        </el-dialog>
-        <el-dialog :visible.sync="qrCodeVisible" title="官方商城" width="30%">
-            <div class="qr-code-container">
-                <img v-if="footerData" :src="footerData.weChatImage" style="width: 150px; height: 150px" />
-                <p>扫描二维码进入官方商城</p>
-            </div>
-        </el-dialog> -->
         <Footer class="top" />
     </div>
 </template>
@@ -91,6 +43,7 @@ import Fea from './components/Fea'
 import Ind from './components/Ind'
 import ProductCarousel from './components/ProductCarousel' // 引入新组件
 import { getAllCertificates, getFooterData } from '@/api/index' // 引入API方法
+// import Adv from './components/Adv.vue'
 export default {
     name: 'Home',
     components: {

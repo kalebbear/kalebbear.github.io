@@ -4,6 +4,7 @@
         <Banner />
         <Bred :mdata="[
             {name:'首页',path:'/home'},
+            {name:'认证服务',path:'/rzservice'},
             {name:'什么是CMMI资质认证',path:''}]" />
         <div class="wp1360">
             <div class="title hsHeader">

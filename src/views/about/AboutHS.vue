@@ -22,10 +22,12 @@
                     公司的咨询服务经验覆盖各行各业，包括软件研发、通讯设备、电力设备、家电、汽车、地产、教育、医疗、银行、证券、机电设备等。公司为上千家企业提供过研发管理改善相关咨询与认证服务。包括华为、腾讯、微软、艾默生、TCL、美的、金山、南方电网、平安集团等知名企业。
                 </div>
                 <img src="@/assets/ab2.png" alt="">
+                <el-divider><i class="el-icon-coffee-cup"></i></el-divider>
                 <div class="pg1">
                     公司主营业务有ASPICE、ISO26262、CMMI、SCRUM、IPD等研发管理培训、咨询、认证、工具。
                 </div>
                 <img src="@/assets/ab3.png" alt="">
+                <el-divider><i class="el-icon-coffee-cup"></i></el-divider>
                 <div class="pg1">
                     华赛公司通过公开课程、企业内训、咨询服务、评估服务、工具研发等方式帮助国内企业提高研发能力。基于对国际先进的研发管理模型、标准、方法论的研究和传播助力国内研发型组织提升产品质量、研发效率、降低研发成本、提升产品竞争力。
                 </div>

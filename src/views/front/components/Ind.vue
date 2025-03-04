@@ -19,11 +19,11 @@
 
         <el-carousel :interval="5000" ref="banner" arrow="always" :height="carouselHeight" @change="bannerChange">
             <el-carousel-item v-for="(item, index) in swiperList" :key="index">
-                <el-image :src="item.imageUrl" alt="" style="width:100%;height:100%" fit="cover" @error="handleImageError" />
+                <el-image :src="item.imageUrl" alt="" style="" fit="cover" @error="handleImageError" />
                 <div>
                     <div class="ind_info">
                         <p class="big_font">{{swiperList[banner_index].label}}行业解决方案</p>
-                        <p class="small_font">研发管理提升之道，过程改进指导模型、研发管理国际标准<i style="color:blue;">(不同行业对应不同文案？)</i></p>
+                        <p class="small_font">研发管理提升之道，过程改进指导模型、研发管理国际标准</p>
                         <!-- <div class="read_more">了解CMMI</div> -->
                     </div>
                 </div>
@@ -48,42 +48,42 @@ export default {
             banner_index: 0,
             swiperList: [
                 {
-                    imageUrl: require('@/assets/images/banner1.jpg'),
+                    imageUrl: require('@/assets/images/wbq/qc.png'),
                     icon: require('@/assets/images/icon/qiche.png'),
                     index: 0,
                     label: '汽车',
                     dec: '助力汽车行业业务的展开，提升移动办公效率',
                 },
                 {
-                    imageUrl: require('@/assets/images/banner3.jpg'),
+                    imageUrl: require('@/assets/images/wbq/jr.png'),
                     icon: require('@/assets/images/icon/jinrong.png'),
                     index: 1,
                     label: '金融',
                     dec: '助力汽车行业业务的展开，提升移动办公效率',
                 },
                 {
-                    imageUrl: require('@/assets/images/banner3.jpg'),
+                    imageUrl: require('@/assets/images/wbq/p11.jpg'),
                     icon: require('@/assets/images/icon/yiliao.png'),
                     index: 2,
                     label: '医疗',
                     dec: '助力汽车行业业务的展开，提升移动办公效率',
                 },
                 {
-                    imageUrl: require('@/assets/images/banner3.jpg'),
+                    imageUrl: require('@/assets/images/wbq/dl.png'),
                     icon: require('@/assets/images/icon/dianli.png'),
                     index: 3,
                     label: '电力',
                     dec: '助力汽车行业业务的展开，提升移动办公效率',
                 },
                 {
-                    imageUrl: require('@/assets/images/banner3.jpg'),
+                    imageUrl: require('@/assets/images/wbq/p2.jpg'),
                     icon: require('@/assets/images/icon/wangzhan.png'),
                     index: 4,
                     label: '互联网',
                     dec: '助力汽车行业业务的展开，提升移动办公效率',
                 },
                 {
-                    imageUrl: require('@/assets/images/banner3.jpg'),
+                    imageUrl: require('@/assets/images/wbq/rgzn.png'),
                     icon: require('@/assets/images/icon/rgzn.png'),
                     index: 5,
                     label: '人工智能',
