@@ -6,10 +6,9 @@
                 <div class="info" v-for="(footerData,i) in footList" :key="i">
                     <div class="aMenu">{{ footerData.name }}</div>
                     <div v-if="footerData.subMenu" class="bMenu">
-                        <div v-for="subItem in footerData.subMenu">{{subItem.name}}</div>
+                        <div v-for="subItem in footerData.subMenu" @click="$router.push(subItem.path)">{{subItem.name}}</div>
                     </div>
                 </div>
-                <!-- <img v-if="footerData" :src="footerData.weChatImage" style="width: 150px; height: 150px" /> -->
             </div>
         </div>
         <div class="other">
@@ -116,6 +115,7 @@ export default {
         .bMenu {
             font-size: 14px;
             color: #888;
+            cursor: pointer;
         }
     }
     .other {

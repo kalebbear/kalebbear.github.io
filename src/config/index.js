@@ -76,33 +76,33 @@ const menuList = [
             },
         ],
     },
-    // {
-    //     name: '社区建设',
-    //     pic: '/images/wbq/p1.webp',
-    //     path: '',
-    //     subMenu: [
-    //         {
-    //             name: '社区活动',
-    //             path: '/noPage'
-    //         },
-    //         {
-    //             name: '商务合作',
-    //             path: '/noPage'
-    //         },
-    //         {
-    //             name: '廉洁申明',
-    //             path: '/noPage'
-    //         },
-    //         {
-    //             name: '信息安全',
-    //             path: '/noPage'
-    //         },
-    //         {
-    //             name: '服务政策',
-    //             path: '/noPage'
-    //         },
-    //     ],
-    // },
+    {
+        name: '社区建设',
+        pic: '/images/wbq/p1.webp',
+        path: '',
+        subMenu: [
+            {
+                name: '社区活动',
+                path: '/sqhd'
+            },
+            {
+                name: '商务合作',
+                path: '/swhz'
+            },
+            {
+                name: '廉洁申明',
+                path: '/ljsm'
+            },
+            {
+                name: '信息安全',
+                path: '/xxaq'
+            },
+            {
+                name: '服务政策',
+                path: '/fwzc'
+            },
+        ],
+    },
     {
         name: '联系我们',
         path: 'phone',
@@ -180,60 +180,72 @@ const menuLista = [
             },
         ],
     },
-    // {
-    //     name: '社区建设',
-    //     pic: '/images/wbq/p1.webp',
-    //     path: '',
-    //     subMenu: [
-    //         {
-    //             name: '社区活动',
-    //             path: '/noPage'
-    //         },
-    //         {
-    //             name: '商务合作',
-    //             path: '/noPage'
-    //         },
-    //         {
-    //             name: '廉洁申明',
-    //             path: '/noPage'
-    //         },
-    //         {
-    //             name: '信息安全',
-    //             path: '/noPage'
-    //         },
-    //         {
-    //             name: '服务政策',
-    //             path: '/noPage'
-    //         },
-    //     ],
-    // },
+    {
+        name: '社区建设',
+        pic: '/images/wbq/p1.webp',
+        path: '',
+        subMenu: [
+            {
+                name: '社区活动',
+                path: '/sqhd'
+            },
+            {
+                name: '商务合作',
+                path: '/swhz'
+            },
+            {
+                name: '廉洁申明',
+                path: '/ljsm'
+            },
+            {
+                name: '信息安全',
+                path: '/xxaq'
+            },
+            {
+                name: '服务政策',
+                path: '/fwzc'
+            },
+        ],
+    },
     {
         name: '联系我们',
         path: 'phone',
     },
 ]
 const footList = [
+
     {
         name: '关于华赛',
+        pic: '/images/wbq/p5.webp',
         path: '',
         subMenu: [
             {
-                name: '了解华赛',
+                name: '华赛简介',
                 path: '/aboutHS'
             },
             {
+                name: '咨询团队',
+                path: '/team'
+            },
+
+            {
                 name: '行业覆盖',
-                path: '/service'
+                path: '/hy'
+            },
+            {
+                name: '客户评价',
+                path: '/khpj'
             },
             {
                 name: '典型案例',
-                path: '/noPage'
+                path: '/al'
             },
         ],
     },
     {
         name: '华赛业务',
         path: '',
+        pic: '/images/wbq/p6.webp',
         subMenu: [
             {
                 name: '咨询服务',
@@ -241,71 +253,69 @@ const footList = [
             },
             {
                 name: '培训服务',
-                path: '/a'
+                path: '/training'
             },
             {
                 name: '认证服务',
-                path: '/a'
+                path: '/aspiceService'
             },
         ],
     },
     {
         name: '华赛研究',
         path: '',
+        pic: '/images/wbq/p9.jpg',
         subMenu: [
             {
                 name: '华赛工具',
-                path: '/a'
+                path: '/hstools'
             },
             {
                 name: '华赛文库',
-                path: '/a'
+                path: '/hsdocs'
             },
             {
                 name: '参考资料',
-                path: '/a'
+                path: '/hsdatas'
             },
         ],
     },
     {
         name: '社区建设',
+        pic: '/images/wbq/p1.webp',
         path: '',
         subMenu: [
             {
                 name: '社区活动',
-                path: '/a'
+                path: '/sqhd'
             },
             {
-                name: '上午合作',
-                path: '/a'
+                name: '商务合作',
+                path: '/swhz'
             },
             {
                 name: '廉洁申明',
-                path: '/a'
+                path: '/ljsm'
             },
             {
                 name: '信息安全',
-                path: '/a'
+                path: '/xxaq'
             },
             {
                 name: '服务政策',
-                path: '/a'
+                path: '/fwzc'
             },
         ],
     },
     {
         name: '联系我们',
-        path: '',
+        path: 'phone',
         subMenu: [
             {
-                name: '在线方式',
-                path: '/a'
+                name: '联系方式',
+                path: '/phone'
             },
-            {
-                name: '在线客服',
-                path: '/a'
-            },
-        ],
+        ]
     },
 ]
 export {

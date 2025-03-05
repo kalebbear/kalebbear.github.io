@@ -316,6 +316,46 @@ const routes = [
             title: 'aspice认证服务'
         }
     },
+    {
+        path: '/fwzc',
+        name: 'fwzc',
+        component: () => import('@/views/sq/fwzc.vue'),
+        meta: {
+            title: '服务政策'
+        }
+    },
+    {
+        path: '/ljsm',
+        name: 'ljsm',
+        component: () => import('@/views/sq/ljsm.vue'),
+        meta: {
+            title: '廉价声明'
+        }
+    },
+    {
+        path: '/sqhd',
+        name: 'sqhd',
+        component: () => import('@/views/sq/sqhd.vue'),
+        meta: {
+            title: '社区活动'
+        }
+    },
+    {
+        path: '/swhz',
+        name: 'swhz',
+        component: () => import('@/views/sq/swhz.vue'),
+        meta: {
+            title: '商务合作'
+        }
+    },
+    {
+        path: '/xxaq',
+        name: 'xxaq',
+        component: () => import('@/views/sq/xxaq.vue'),
+        meta: {
+            title: '信息安全'
+        }
+    },
 ]
 
 const router = new VueRouter({
