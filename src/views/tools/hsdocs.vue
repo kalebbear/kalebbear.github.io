@@ -3,7 +3,7 @@
         <Nav />
         <Banner />
         <Bred :mdata="[
-            {name:'首页',path:'/home'},
+            {name:'首页',path: $store.state.type==='aspice'?'/aspice':'/home'},
             {name:'华赛文库',path:''}]" />
         <div class=" wp1360">
             <div class="hsHeader">
@@ -19,7 +19,7 @@
                 <el-collapse-item v-for="(item,index) in wkjson" :name="item.key" :key="item.key">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:22px;">{{item.title}}<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:20px;color:#666;">{{item.title}}<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div v-html="item.html">

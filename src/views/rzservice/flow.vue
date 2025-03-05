@@ -3,7 +3,7 @@
         <Nav />
         <Banner />
         <Bred :mdata="[
-            {name:'首页',path:'/home'},
+            {name:'首页',path: $store.state.type==='aspice'?'/aspice':'/home'},
             {name:'暂无',path:''}]" />
         <div class=" wp1360">
             <div class="hsHeader">

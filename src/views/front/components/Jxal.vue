@@ -1,5 +1,5 @@
 <template>
-    <div class="banner_wrap">
+    <div class="banner_wrap2">
         <!-- <el-carousel :interval="4000" type="card" height="200px">
             <el-carousel-item v-for="item in 6" :key="item">
                 <h3 class="medium">111</h3>
@@ -23,23 +23,11 @@
                     <el-image :src="item.imageUrl" alt="" style="width:100%;height:100%" fit="cover" @error="handleImageError" />
                     <div class="dec">
                         <h3 class="header">{{item.title}}</h3>
-                        <div>{{item.dec}}}</div>
+                        <div style="line-height:28px;">{{item.dec}}</div>
                     </div>
                 </div>
 
-                <!-- <div> -->
-                <!-- <div class="banner_info" v-if="(index===0 &&type=== 0)||type===1">
-                        <p class="big_font">Capability Maturity Model (Integration)</p>
-                        <p class="big_font">能力成熟度模型（集成）</p>
-                        <p class="small_font">研发管理提升之道，过程改进指导模型、研发管理国际标准</p>
-                        <div class="read_more" @click="()=>{$router.push('/cmmijs')}">了解CMMI</div>
-                    </div>
-                    <div class="banner_info" v-if="(index===1&&type=== 0)||type===2">
-                        <p class="big_font">CMMI资质认证</p>
-                        <p class="small_font" style="margin-top:20px">研发管理国际标准、研发能力水平认定、研发类供应商的必备资质</p>
-                        <div class="read_more" @click="()=>{$router.push('/whatCMMI')}">【查看更多】</div>
-                    </div> -->
-                <!-- </div> -->
+                
 
             </el-carousel-item>
 
@@ -56,6 +44,7 @@ export default {
     components: {},
     props: {
         type: 0,
+        blist: [],
     },
     watch: {},
     data() {
@@ -65,37 +54,36 @@ export default {
                 {
                     imageUrl: require('@/assets/images/banners/bb1.jpg'),
                     index: 0,
-                    title: '湖北家庭医生项目',
-                    dec: '为响应国家分级诊疗的要求，配合推进全民家庭医生随访工作落地，提升家庭医生工作效率，为一线工作人员配备工作手机。通过和各地市卫计局沟通家庭医生项目情况，确定号卡套餐、搭载终端型号、APP 应用等，并推进卫计局针对相关卫生服务中心等发文通知。',
+                    title: '华赛助力某省级医疗信息化平台通过CMMI 3级认证',
+                    dec: '华赛为某省级医疗信息化平台提供了全面的CMMI 3级认证咨询与实施服务。在项目中，华赛团队结合医疗行业的特殊需求，对平台的软件开发流程进行了系统优化，重点改进了需求管理、项目策划和质量保证等关键环节。通过引入标准化流程和工具，平台的开发效率显著提升，软件质量得到保障。',
                 },
                 {
                     imageUrl: require('@/assets/images/banners/bb2.jpg'),
                     index: 1,
-                    title: '温州和家宝校园项目',
-                    dec: '代步车代步车代步车代步车代步车代步车代步车代步车代步车代步车代步车代步车代步车代步车代步车代步车代步车',
+                    title: '华赛助力某在线教育平台优化研发流程',
+                    dec: '华赛为某知名在线教育平台提供了基于CMMI的流程优化服务。该平台拥有海量的在线课程和用户，但随着业务的快速增长，原有的研发流程逐渐暴露出效率瓶颈。华赛团队结合CMMI模型，对其软件开发流程进行了全面梳理，优化了需求管理、项目策划、质量保证和配置管理等关键环节。通过引入敏捷开发方法和自动化测试工具，平台的开发周期缩短了30%，软件缺陷率降低了40%。',
                 },
                 {
                     imageUrl: require('@/assets/images/banners/bb3.jpg'),
                     index: 3,
-                    title: '平安银行内购项目',
-                    dec: '银行项目 应用等，并推进卫计局针对相关卫生服务中心等发文通知用等，并推进卫计局针对相关卫生服务中心等发文通知用等，并推进卫计局针对相关卫生服务中心等发文通知。',
+                    title: '华赛助力某金融科技公司通过CMMI 5级认证',
+                    dec: '华赛为某金融科技公司提供了CMMI 5级认证的全程咨询与实施支持。通过深入分析公司业务需求和技术现状，华赛为其设计了一套完整的流程改进方案，涵盖需求管理、项目策划、质量保证等多个关键领域。在实施过程中，华赛引入先进的量化管理工具，帮助公司实现了对软件开发过程的精细化监控和持续优化。',
                 },
-                // {
-                //     imageUrl: require('@/assets/images/banner3.jpg'),
-                //     index: 2,
-                // },
+                {
+                    imageUrl: require('@/assets/images/banners/bb5.jpg'),
+                    index: 3,
+                    title: '华赛助力某互联网教育平台通过CMMI 5级认证',
+                    dec: '华赛为某互联网教育平台提供了CMMI 5级认证的全程咨询与实施服务。该平台通过在线课程和互动学习工具，为全球用户提供优质的教育资源。华赛团队结合互联网教育行业的特点，对平台的软件开发流程进行了深度优化，引入了先进的量化管理和过程优化工具。通过持续改进，平台在用户体验、课程更新效率、系统稳定性等方面均取得了显著提升。',
+                },
             ],
             carouselHeight: '500px', // 默认高度
         }
     },
 
     mounted() {
-        // console.log('Component mounted') // 确认组件挂载
-        if (this.type === 1) {
-            this.swiperList = [this.swiperList[0]]
-        }
-        if (this.type === 2) {
-            this.swiperList = [this.swiperList[1]]
+        if (this.blist && this.blist.length) {
+            console.log('hasblist')
+            this.swiperList = [...this.blist]
         }
         window.addEventListener('resize', this.setCarouselHeight)
     },
@@ -130,7 +118,7 @@ export default {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     .dec {
         padding: 50px 72px 80px;
-        width: 50%;
+
         h3 {
             font-size: 30px;
             margin: 0 0 20px;
@@ -142,7 +130,7 @@ export default {
         }
     }
 }
-.banner_wrap {
+.banner_wrap2 {
     background: #f5f6f7;
     position: relative;
     padding: 40px 0;

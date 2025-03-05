@@ -16,6 +16,12 @@ const routes = [
         props: true
     },
     {
+        path: '/aspice',
+        name: 'aspice',
+        component: () => import('@/views/front/ASPICE.vue'),
+        props: true
+    },
+    {
         path: '/login',
         component: () => import('@/views/login/login.vue'),
         meta: {
@@ -296,79 +302,87 @@ const routes = [
         }
     },
     {
-        path: '/admin',
-        name: 'Admin',
-        component: () => import('@/views/admin/Index.vue'),
+        path: '/carryAspice',
+        name: 'carryAspice',
+        component: () => import('@/views/ASPICE/carryAspice.vue'),
         meta: {
-            title: '后台首页'
-        },
-        children: [
-            {
-                path: '/info',
-                name: 'Info',
-                component: () => import('@/views/admin/Info.vue'),
-                meta: {
-                    title: '基本信息'
-                }
-            },
-            {
-                path: '/Brands',
-                name: 'Brands',
-                component: () => import('@/views/admin/Brands.vue'),
-                meta: {
-                    title: '品牌配置'
-                }
-            },
-            {
-                path: '/Products',
-                name: 'Products',
-                component: () => import('@/views/admin/Products.vue'),
-                meta: {
-                    title: '商品配置'
-                }
-            },
-            {
-                path: '/Carousel',
-                name: 'Carousel',
-                component: () => import('@/views/admin/Carousel.vue'),
-                meta: {
-                    title: '轮播图配置'
-                }
-            },
-            {
-                path: '/ProductsCarousels',
-                name: 'ProductsCarousels',
-                component: () => import('@/views/admin/ProductsCarousels.vue'),
-                meta: {
-                    title: '轮播图配置'
-                }
-            },
-            {
-                path: '/ProductsWaterfall',
-                name: 'ProductsWaterfall',
-                component: () => import('@/views/admin/ProductsWaterfall.vue'),
-                meta: {
-                    title: '瀑布流商品配置'
-                }
-            },
-            {
-                path: '/BrandAuthorizationCertificate',
-                name: 'BrandAuthorizationCertificate',
-                component: () => import('@/views/admin/BrandAuthorizationCertificate.vue'),
-                meta: {
-                    title: '品牌授权证书配置'
-                }
-            },
-        ]
+            title: 'ASPICE实施流程'
+        }
+    },
+    {
+        path: '/carryAspicerz',
+        name: 'carryAspicerz',
+        component: () => import('@/views/ASPICE/carryAspicerz.vue'),
+        meta: {
+            title: 'ASPICE认证流程'
+        }
+    },
+    {
+        path: '/whatAspice',
+        name: 'whatAspice',
+        component: () => import('@/views/ASPICE/whatAspice.vue'),
+        meta: {
+            title: '什么是ASPICE'
+        }
+    },
+    {
+        path: '/whatAspicerz',
+        name: 'whatAspicerz',
+        component: () => import('@/views/ASPICE/whatAspicerz.vue'),
+        meta: {
+            title: '什么是ASCPIE认证'
+        }
+    },
+    {
+        path: '/whyAspice',
+        name: 'whyAspice',
+        component: () => import('@/views/ASPICE/whyAspice.vue'),
+        meta: {
+            title: '为什么要进行ASPICE认证'
+        }
+    },
+    {
+        path: '/aspiceService',
+        name: 'aspiceService',
+        component: () => import('@/views/ASPICE/aspiceService.vue'),
+        meta: {
+            title: 'aspice认证服务'
+        }
     },
 ]
 
 const router = new VueRouter({
-    mode: 'hash',
+    mode: 'history',
     base: process.env.BASE_URL,
     routes
 })
 
+
+router.beforeEach((to, from, next) => {
+    if (to.path === '/home') {
+        // setTimeout(() => { localStorage.setItem('type', 'cmmi') }, 200)
+        localStorage.setItem('type', 'cmmi')
+
+    }
+    if (to.path === '/aspice') {
+        // setTimeout(() => { localStorage.setItem('type', 'aspice') }, 200)
+        localStorage.setItem('type', 'aspice')
+    }
+    // console.log(from.path, to.path, localStorage.getItem('type') === 'aspice');
+    // if (localStorage.getItem('type') === 'aspice' && to.path === '/home') {
+    //     console.log('__________')
+    //     next({ path: '/aspice' })
+    // } else {
+    //     next();
+    // }
+    next();
+    // `to` 和 `from` 是路由信息对象。`next` 是一个函数，该函数需要被调用来 resolve 这个钩子。调用时可以传递参数。
+    // if (to.name !== 'Login' && !isAuthenticated()) { // 假设 isAuthenticated 是检查用户是否认证的函数
+    //     next({ name: 'Login' }); // 重定向到登录页面
+    // } else {
+    //     next(); // 确保一定要调用 next()
+    // }
+});
 export default router
 
 export function resetRouter () {

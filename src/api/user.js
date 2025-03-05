@@ -22,22 +22,9 @@ export const loginNum = (inStorageNo) => {
   })
 }
 
-// 管理员登出接口
-export const logout = () => {
-  return request({
-    url: '/api/user/logout',
-    method: 'post'
-  })
-}
 
-// 获取管理员信息
-export const getInfo = (token) => {
-  return request({
-    url: '/client/anno/getRoles',
-    method: 'get',
-    params: { token }
-  })
-}
+
+
 
 // 发送手机登录验证码
 export const sendMobileVerifyCode = (data) => {

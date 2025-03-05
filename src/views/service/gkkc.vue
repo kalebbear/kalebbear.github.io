@@ -3,7 +3,7 @@
         <Nav />
         <Banner />
         <Bred :mdata="[
-            {name:'首页',path:'/home'},
+            {name:'首页',path: $store.state.type==='aspice'?'/aspice':'/home'},
             {name:'培训服务',path:'/training'},
             {name:'公开课程',path:''}]" />
         <div class="wp1360">
@@ -14,24 +14,24 @@
                 <el-collapse-item :name="1">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:22px;">需求工程<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:20px;color:#666;">需求工程<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">一个项目成功与否往往取决于它是否符合需求，对于需求及其变更的管理是项目成功最关键的因素。本课程多个实际案例进行分析，讲解需求管理的概念及内容，探讨需求管理应当遵循的原则及当前存在的问题。我们把所有与需求相关的活动统称为需求工程。需求工程的活动又可分为两大类，即需求开发和需求管理。需求分析师通过需求调查(调研)、需求分析和需求定义，完成需求开发工作。而项目经理则通过对需求确认、需求跟踪和需求变更控制的主导，实现需求管理。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程目标</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">加强需求管理意识，提升需求调研、需求分析、需求跟踪、变更管理的能力。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">学员对象</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">市场分析人员、需求调研人员、产品经理、项目经理、测试人员、开发人员</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程收益</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">了解常见需求开发和管理工作中的问题</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">了解需求开发和管理的知识和方法</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">了解业界常用需求开发和管理工具</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程内容</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">需求开发知识</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">需求管理知识</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">需求管理工具</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程安排</strong></span></p>
+                        <p class="pg1">一个项目成功与否往往取决于它是否符合需求，对于需求及其变更的管理是项目成功最关键的因素。本课程多个实际案例进行分析，讲解需求管理的概念及内容，探讨需求管理应当遵循的原则及当前存在的问题。我们把所有与需求相关的活动统称为需求工程。需求工程的活动又可分为两大类，即需求开发和需求管理。需求分析师通过需求调查(调研)、需求分析和需求定义，完成需求开发工作。而项目经理则通过对需求确认、需求跟踪和需求变更控制的主导，实现需求管理。</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程目标</strong></span></p>
+                        <p class="pg1">加强需求管理意识，提升需求调研、需求分析、需求跟踪、变更管理的能力。</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">学员对象</strong></span></p>
+                        <p class="pg1">市场分析人员、需求调研人员、产品经理、项目经理、测试人员、开发人员</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程收益</strong></span></p>
+                        <p class="pg1">了解常见需求开发和管理工作中的问题</span></p>
+                        <p class="pg1">了解需求开发和管理的知识和方法</span></p>
+                        <p class="pg1">了解业界常用需求开发和管理工具</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程内容</strong></span></p>
+                        <p class="pg1">需求开发知识</span></p>
+                        <p class="pg1">需求管理知识</span></p>
+                        <p class="pg1">需求管理工具</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程安排</strong></span></p>
                         <table width="600" bgcolor="#00000" border="1" cellspacing="1" cellpadding="5" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; line-height: 22px; white-space: normal;">
                             <tbody style="margin: 0px; padding: 0px;">
                                 <tr style="margin: 0px; padding: 0px; font-stretch: normal; font-family: 宋体, Arial, Helvetica, sans-serif;">
@@ -68,27 +68,27 @@
                 <el-collapse-item :name="2">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:22px;">测试工程<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:20px;color:#666;">测试工程<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">本课程通过实际测试案例讲解测试工程的知识、方法。 包括计划和用例的制定、测试需求的分析、性能测试，自动化测试技术，以及不同行业所特有的测试方法和策略。 同时，本课程还结合实际企业案例讲述了测试团队的建设和测试方法的改进。本课程还展示业界常用测试工具的使用方法，以及自动化用例的开发方法。通过本课程的学习学员能够从无到有基本胜任一般企业的测试工作，也可以帮助有经验的测试工作人员发现日常工作中的问题，找到提升测试效率和效果的方法。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程目标</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 提高测试人员的测试能力</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 提升管理人员的产品质量控制能力</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">学员对象</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 测试工程师和质量管理工程师、测试主管、测试经理、质量管理、经理、其他相关项目管理人员和开发人员</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程收益</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 掌握测试工程理论知识</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 了解常见测试工具</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 掌握缺陷数据的分析与测试工作的改进方法</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 了解常见测试工作中的问题和要点</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程内容</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 产品测试的基本方法和相关概念</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 常见测试流程及有效的测试管理</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 性能测试及自动化测试</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 测试的质量保证</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程安排</strong></span></p>
+                        <p class="pg1">本课程通过实际测试案例讲解测试工程的知识、方法。 包括计划和用例的制定、测试需求的分析、性能测试，自动化测试技术，以及不同行业所特有的测试方法和策略。 同时，本课程还结合实际企业案例讲述了测试团队的建设和测试方法的改进。本课程还展示业界常用测试工具的使用方法，以及自动化用例的开发方法。通过本课程的学习学员能够从无到有基本胜任一般企业的测试工作，也可以帮助有经验的测试工作人员发现日常工作中的问题，找到提升测试效率和效果的方法。</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程目标</strong></span></p>
+                        <p class="pg1">• 提高测试人员的测试能力</span></p>
+                        <p class="pg1">• 提升管理人员的产品质量控制能力</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">学员对象</strong></span></p>
+                        <p class="pg1">• 测试工程师和质量管理工程师、测试主管、测试经理、质量管理、经理、其他相关项目管理人员和开发人员</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程收益</strong></span></p>
+                        <p class="pg1">• 掌握测试工程理论知识</span></p>
+                        <p class="pg1">• 了解常见测试工具</span></p>
+                        <p class="pg1">• 掌握缺陷数据的分析与测试工作的改进方法</span></p>
+                        <p class="pg1">• 了解常见测试工作中的问题和要点</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程内容</strong></span></p>
+                        <p class="pg1">• 产品测试的基本方法和相关概念</span></p>
+                        <p class="pg1">• 常见测试流程及有效的测试管理</span></p>
+                        <p class="pg1">• 性能测试及自动化测试</span></p>
+                        <p class="pg1">• 测试的质量保证</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程安排</strong></span></p>
                         <table width="600" bgcolor="#00000" border="1" cellspacing="1" cellpadding="5" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; line-height: 22px; white-space: normal;">
                             <tbody style="margin: 0px; padding: 0px;">
                                 <tr style="margin: 0px; padding: 0px; font-stretch: normal; font-family: 宋体, Arial, Helvetica, sans-serif;">
@@ -124,38 +124,38 @@
                 <el-collapse-item :name="3">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:22px;">Introduction to CMMI<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:20px;color:#666;">Introduction to CMMI<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">CMMI模型帮助组织提高其开发和维护高质量产品与服务的能力，目前在全球范围内被广泛认可、最流行的的研发流程改进模型，国内已有数千家企业实施了CMMI。本课程是由CMMI官方机构SEI授权的课程，成功完成本次培训是成为SCAMPI评估组成员的前提条件，是企业通过SEI认证的前提条件，同时也是参加其他SEI课程的前提条件，包括CMMI中级概念，SCAMPI主任评估师培训、CMMI讲师培训等课程。本次三天的课程将向系统及软件工程管理者与实践者、评估组成员和工程过程组(SEPG,EPG)成员介绍能力成熟度模型集成(CMMI)基本概念。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">本次课程将采用CMMI for Development 1.3版本,详尽介绍CMMI以及CMMI IPPD，包括了阶段表示法和连续表示法。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">本次课程包含讲演和课堂练习，并为参加的人员提供丰富的提问、讨论和交流机会。完成本次课程后,学员能够理解如何将CMMI模型应用于其组织内的过程改进项目。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程目标</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">本课程旨在向研发领域的管理人员介绍CMMI模型及其实践方法，通过本课程的学习，学员可以了解如何一步步的持续改善企业研发流程，以及一个良好的研发型组织应该具备的特性。CMMI是SEI对全球数百家知名企业、数前个项目进行调查后总结的模型。包括IBM，波音公司，美国航空局，摩托罗拉公司等。通过学习本课程可以了解业界知名企业是如何进行研发管理的，如何一步步提升其研发管理水平的。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">学员对象</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">本课程适用于所有研发领域的、对研发管理工作感兴趣的员工，尤其对企业CEO、技术总监、研发部负责人、质量部负责人、质量管理工作者、过程改进工作者等日常工作有极大的启发作用。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">培训语言</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">英文教材、英语讲师、中文翻译</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">培训时长</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">3天</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程收益</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">通过本课程，可以获得由美国软件工程组织SEI颁发的课程证书。同时本课程帮助学员：</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 了解CMMI的基本概念、模型结构和作用。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 掌握CMMI模型的各级别、过程域、目标和实践。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 了解CMMI评估方法的基本概念。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 了解优秀的研发管理流程和业界最佳的管理方法。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 了解如何引导研发组织进行管理变革，持续、有效的进行过程改进。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 了解先进的项目管理、需求工程、质量管理、配置管理、过程改进、量化管理知识。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 了解先进的产品设计、测试和评审方法。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">课程内容</strong></span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• CMMI的历史背景</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• CMMI的模型结构</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• CMMI的各组成元素</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• CMMI各过程域讲解</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 在企业中推行CMMI的方法</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">• 进行CMMI评估的方法</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);"><strong style="margin: 0px; padding: 0px;">培训日程安排</strong></span></p>
+                        <p class="pg1">CMMI模型帮助组织提高其开发和维护高质量产品与服务的能力，目前在全球范围内被广泛认可、最流行的的研发流程改进模型，国内已有数千家企业实施了CMMI。本课程是由CMMI官方机构SEI授权的课程，成功完成本次培训是成为SCAMPI评估组成员的前提条件，是企业通过SEI认证的前提条件，同时也是参加其他SEI课程的前提条件，包括CMMI中级概念，SCAMPI主任评估师培训、CMMI讲师培训等课程。本次三天的课程将向系统及软件工程管理者与实践者、评估组成员和工程过程组(SEPG,EPG)成员介绍能力成熟度模型集成(CMMI)基本概念。</span></p>
+                        <p class="pg1">本次课程将采用CMMI for Development 1.3版本,详尽介绍CMMI以及CMMI IPPD，包括了阶段表示法和连续表示法。</span></p>
+                        <p class="pg1">本次课程包含讲演和课堂练习，并为参加的人员提供丰富的提问、讨论和交流机会。完成本次课程后,学员能够理解如何将CMMI模型应用于其组织内的过程改进项目。</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程目标</strong></span></p>
+                        <p class="pg1">本课程旨在向研发领域的管理人员介绍CMMI模型及其实践方法，通过本课程的学习，学员可以了解如何一步步的持续改善企业研发流程，以及一个良好的研发型组织应该具备的特性。CMMI是SEI对全球数百家知名企业、数前个项目进行调查后总结的模型。包括IBM，波音公司，美国航空局，摩托罗拉公司等。通过学习本课程可以了解业界知名企业是如何进行研发管理的，如何一步步提升其研发管理水平的。</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">学员对象</strong></span></p>
+                        <p class="pg1">本课程适用于所有研发领域的、对研发管理工作感兴趣的员工，尤其对企业CEO、技术总监、研发部负责人、质量部负责人、质量管理工作者、过程改进工作者等日常工作有极大的启发作用。</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">培训语言</strong></span></p>
+                        <p class="pg1">英文教材、英语讲师、中文翻译</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">培训时长</strong></span></p>
+                        <p class="pg1">3天</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程收益</strong></span></p>
+                        <p class="pg1">通过本课程，可以获得由美国软件工程组织SEI颁发的课程证书。同时本课程帮助学员：</span></p>
+                        <p class="pg1">• 了解CMMI的基本概念、模型结构和作用。</span></p>
+                        <p class="pg1">• 掌握CMMI模型的各级别、过程域、目标和实践。</span></p>
+                        <p class="pg1">• 了解CMMI评估方法的基本概念。</span></p>
+                        <p class="pg1">• 了解优秀的研发管理流程和业界最佳的管理方法。</span></p>
+                        <p class="pg1">• 了解如何引导研发组织进行管理变革，持续、有效的进行过程改进。</span></p>
+                        <p class="pg1">• 了解先进的项目管理、需求工程、质量管理、配置管理、过程改进、量化管理知识。</span></p>
+                        <p class="pg1">• 了解先进的产品设计、测试和评审方法。</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">课程内容</strong></span></p>
+                        <p class="pg1">• CMMI的历史背景</span></p>
+                        <p class="pg1">• CMMI的模型结构</span></p>
+                        <p class="pg1">• CMMI的各组成元素</span></p>
+                        <p class="pg1">• CMMI各过程域讲解</span></p>
+                        <p class="pg1">• 在企业中推行CMMI的方法</span></p>
+                        <p class="pg1">• 进行CMMI评估的方法</span></p>
+                        <p class="pg1"><strong style="margin: 0px; padding: 0px;">培训日程安排</strong></span></p>
                         <table width="600" bgcolor="#00000" border="1" cellspacing="1" cellpadding="5" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; line-height: 22px; white-space: normal;">
                             <tbody style="margin: 0px; padding: 0px;">
                                 <tr style="margin: 0px; padding: 0px; font-stretch: normal; font-family: 宋体, Arial, Helvetica, sans-serif;">
@@ -191,7 +191,7 @@
                 <el-collapse-item :name="4">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:22px;">项目管理<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:20px;color:#666;">项目管理<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -203,17 +203,17 @@
                 <el-collapse-item :name="5">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:22px;">企业战略管理<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:20px;color:#666;">企业战略管理<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">本课程的宗旨是培养能适应经济全球化和知识经济时代发展要求的，符合社会主义市场经济需要的，具有理论素养、战略眼光、竞争意识、组织才能以及经济、法律知识的现代管理人才。战略管理是管理科学中综合性、动态性较强的一个领域，是企业管理的核心课程，是管理人员必修课程之一。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">本次培训的主要内容是要通过理论讲授、课堂讨论与案例分析，系统的介绍战略分析、战略制定与战略实施的基本理论与方法，并结合国内外企业战略管理的实践，树立规范的战略管理观念，在突出战略思维的基础上重点讲解战略分析和战略决策的技能。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">本次培训的特色与创新之处在于：</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">（1）移植和借鉴MBA案例教学的经验，广泛采用启发性、互动性、实践性的案例教学；</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">（2）多层次案例组织与管理。不仅组织学生进行小型案例的分析、演讲和讨论，而且组织大案例的准备、讨论和案例分析报告；不仅组织个人准备的案例，而且组织小组讨论的案例；</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">（3）结合前台演讲全面评价学员的案例分析，帮助学员取得更多体验性收获。</span></p>
-                        <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">培训日程安排</span></p>
+                        <p class="pg1">本课程的宗旨是培养能适应经济全球化和知识经济时代发展要求的，符合社会主义市场经济需要的，具有理论素养、战略眼光、竞争意识、组织才能以及经济、法律知识的现代管理人才。战略管理是管理科学中综合性、动态性较强的一个领域，是企业管理的核心课程，是管理人员必修课程之一。</span></p>
+                        <p class="pg1">本次培训的主要内容是要通过理论讲授、课堂讨论与案例分析，系统的介绍战略分析、战略制定与战略实施的基本理论与方法，并结合国内外企业战略管理的实践，树立规范的战略管理观念，在突出战略思维的基础上重点讲解战略分析和战略决策的技能。</span></p>
+                        <p class="pg1">本次培训的特色与创新之处在于：</span></p>
+                        <p class="pg1">（1）移植和借鉴MBA案例教学的经验，广泛采用启发性、互动性、实践性的案例教学；</span></p>
+                        <p class="pg1">（2）多层次案例组织与管理。不仅组织学生进行小型案例的分析、演讲和讨论，而且组织大案例的准备、讨论和案例分析报告；不仅组织个人准备的案例，而且组织小组讨论的案例；</span></p>
+                        <p class="pg1">（3）结合前台演讲全面评价学员的案例分析，帮助学员取得更多体验性收获。</span></p>
+                        <p class="pg1">培训日程安排</span></p>
                         <table width="600" bgcolor="#00000" border="1" cellspacing="1" cellpadding="5" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; line-height: 22px; white-space: normal;">
                             <tbody style="margin: 0px; padding: 0px;">
                                 <tr style="margin: 0px; padding: 0px; font-stretch: normal; font-family: 宋体, Arial, Helvetica, sans-serif;">

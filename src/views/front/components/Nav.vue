@@ -21,8 +21,8 @@
                     <div class="tel">0755-29656825</div>
                 </div>
                 <div>
-                    <label>CMMI专线：</label>
-                    <div class="tel">14737222742</div>
+                    <label>{{$store.state.type==='aspice'?'ASPICE专线：':'CMMI专线：'}}</label>
+                    <div class="tel">{{$store.state.type==='aspice'?'189-2459-7488':'14737222742'}}</div>
                 </div>
             </div>
         </div>
@@ -44,12 +44,12 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import { menuList } from '@/config/index'
+import { menuList, menuLista } from '@/config/index'
 export default {
     name: 'Nav',
     data() {
         return {
-            navList: menuList,
+            navList: [],
             pic: '/images/banner1.jpg',
             showSub: false,
             subList: [{}],
@@ -70,17 +70,12 @@ export default {
                 this.logoImage = footerData.beianImage // 从缓存中读取 beianImage
             })
         }
+        this.$store.dispatch('setType')
+        this.navList =
+            this.$store.state.type === 'aspice' ? menuLista : menuList
     },
 
     methods: {
-        logout() {
-            this.$message.success('退出成功')
-            localStorage.removeItem('token')
-            this.isLogin = false
-            this.$router.replace({
-                path: '/login',
-            })
-        },
         menuChange(item) {
             if (item.subMenu) {
                 this.subList = item.subMenu
@@ -233,7 +228,7 @@ export default {
         }
         .tel_box {
             label {
-                width: 100px;
+                width: 120px;
                 display: inline-block;
                 text-align: justify;
                 text-align-last: justify;

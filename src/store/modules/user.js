@@ -1,13 +1,13 @@
-import {login, logout, getInfo} from '@/api/user'
-import {getToken, setToken, removeToken} from '@/utils/auth'
-import router, {resetRouter} from '@/router'
-import {Message, Notification} from 'element-ui'
+
+import { getToken, setToken, removeToken } from '@/utils/auth'
+import router, { resetRouter } from '@/router'
+import { Message, Notification } from 'element-ui'
 import md5 from 'js-md5'
 import moment from "moment";
 
 // 初始状态
 const state = {
-    token: getToken(), name: '游客', avatar: '', introduction: '', roles: [], mobile: '', id: '', isPay: false,
+    token: getToken(), name: '游客', avatar: '', introduction: '', roles: [], mobile: '', id: '', isPay: false, webtype: 'cmmi'
 }
 // 修改状态
 const mutations = {
@@ -27,15 +27,21 @@ const mutations = {
         state.id = id
     }, SET_IS_PAY: (state, isPay) => {
         state.isPay = isPay
+    }, SET_TYPE: (state, type) => {
+        state.webtype = type
     }
 
 }
 
 // 异步操作
 const actions = {
+    setType ({ commit }) {
+        console.log('_disp')
+        commit('SET_TYPE', localStorage.type)
+    },
     // 登录
-    login({commit}, userInfo) {
-        const {userName, password} = userInfo
+    login ({ commit }, userInfo) {
+        const { userName, password } = userInfo
         commit('SET_PASSWORD', password)
         localStorage.setItem('SET_NAME', userName)
         commit('SET_NAME', userName)
@@ -65,9 +71,9 @@ const actions = {
             //   reject(error)
             // })
         })
-    }, 
+    },
     // 获取用户信息
-    getInfo({commit, state}) {
+    getInfo ({ commit, state }) {
         return new Promise((resolve, reject) => {
             const tokens = getToken()
             getInfo(tokens).then(response => {
@@ -85,7 +91,7 @@ const actions = {
                 if (response.status != 0) {
                     reject('请重新登录！')
                 }
-                const {roles, name, mobile} = data
+                const { roles, name, mobile } = data
                 if (!roles || roles.length <= 0) {
                     reject('getInfo: roles must be a non-null array!')
                 }
@@ -101,25 +107,10 @@ const actions = {
         })
     },
 
-    // 登出
-    logout({commit, state, dispatch}) {
-        return new Promise((resolve, reject) => {
-            logout(state.token).then(() => {
-                commit('SET_TOKEN', '')
-                commit('SET_ROLES', [])
-                removeToken()
-                resetRouter()
-                // reset visited views and cached views
-                dispatch('tagsView/delAllViews', null, {root: true})
-                resolve()
-            }).catch(error => {
-                reject(error)
-            })
-        })
-    },
+
 
     // 重置token
-    resetToken({commit}) {
+    resetToken ({ commit }) {
         return new Promise(resolve => {
             commit('SET_TOKEN', '')
             commit('SET_ROLES', [])
@@ -129,18 +120,18 @@ const actions = {
     },
 
     // 动态修改权限
-    async changeRoles({commit, dispatch}, role) {
+    async changeRoles ({ commit, dispatch }, role) {
         const token = role + '-token'
         commit('SET_TOKEN', token)
         setToken(token)
-        const {roles} = await dispatch('getInfo')
+        const { roles } = await dispatch('getInfo')
         resetRouter()
         // generate accessible routes map based on roles
-        const accessRoutes = await dispatch('permission/generateRoutes', roles, {root: true})
+        const accessRoutes = await dispatch('permission/generateRoutes', roles, { root: true })
         // dynamically add accessible routes
         router.addRoutes(accessRoutes)
         // reset visited views and cached views
-        dispatch('tagsView/delAllViews', null, {root: true})
+        dispatch('tagsView/delAllViews', null, { root: true })
     }
 }
 

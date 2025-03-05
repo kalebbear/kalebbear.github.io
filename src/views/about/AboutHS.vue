@@ -3,7 +3,7 @@
         <Nav />
         <Banner />
         <Bred :mdata="[
-            {name:'首页',path:'/home'},
+            {name:'首页',path: $store.state.type==='aspice'?'/aspice':'/home'},
             {name:'关于华赛',path:''},
             {name:'华赛简介',path:''}]" />
         <div class="wp1360">
@@ -45,9 +45,14 @@ import { addBrand } from '@/api/index.js'
 export default {
     name: 'Brands',
     data() {
-        return {}
+        return {
+            webtype: '',
+        }
     },
-    mounted() {},
+    mounted() {
+        // this.webtype = localStorage.type
+        console.log('asd', this.$store.state.type)
+    },
     methods: {},
 }
 </script>

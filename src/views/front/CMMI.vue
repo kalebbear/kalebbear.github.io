@@ -7,24 +7,25 @@
                 <el-col :span="16">
                     <el-card class="box-card">
                         <div slot="header" class="clearfix">
-                            <span>历年全球评估数量走势折线图<i style="color:red;">(暂缺)</i>
+                            <span>历年全球评估数量走势折线图<i style="color:red;"></i>
                             </span>
                             <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
                         </div>
                         <div class="center">
-                            <img :src="require('@/assets/images/zxt.jpg')" alt="">
+                            <img :src="require('@/assets/images/zxt1.png')" alt="">
+                            <!-- <CMMIAssessmentsChart /> -->
                         </div>
                     </el-card>
                 </el-col>
                 <el-col :span="8">
                     <el-card class="box-card">
                         <div slot="header" class="clearfix">
-                            <span>去年中国各级别企业数量柱状图<i style="color:red;">(暂缺)</i>
+                            <span>去年中国各级别企业数量柱状图<i style="color:red;"></i>
                             </span>
                             <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
                         </div>
                         <div>
-                            <img :src="require('@/assets/images/zzt.png')" alt="" width="100%" height="380">
+                            <img :src="require('@/assets/images/zzt1.png')" alt="" width="100%" height="380">
                         </div>
                     </el-card>
                 </el-col>
@@ -39,7 +40,7 @@
             </el-card>
         </div>
         <Hskh />
-        <Cjwt/>
+        <Cjwt />
         <Footer class="top" />
     </div>
 </template>
@@ -51,7 +52,9 @@ import Steps2 from './components/Steps2'
 import Fea from './components/Fea'
 import Hskh from './components/Hskh'
 import Cjwt from './components/Cjwt'
+
 import ProductCarousel from './components/ProductCarousel' // 引入新组件
+// import CMMIAssessmentsChart from './CMMIAssessmentsChart'
 import { getAllCertificates, getFooterData } from '@/api/index' // 引入API方法
 export default {
     name: 'Home',
@@ -62,7 +65,7 @@ export default {
         Steps2,
         Fea,
         Hskh,
-        Cjwt
+        Cjwt,
     },
     props: {},
     watch: {},
