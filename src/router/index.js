@@ -9,32 +9,14 @@ const routes = [
         path: '/',
         redirect: '/home',
     },
-    {
-        path: '/ProductDetail/:id',
-        name: 'ProductDetail',
-        component: () => import('@/views/front/components/ProductDetail.vue'),
-        props: true
-    },
+    
     {
         path: '/aspice',
         name: 'aspice',
         component: () => import('@/views/front/ASPICE.vue'),
         props: true
     },
-    {
-        path: '/login',
-        component: () => import('@/views/login/login.vue'),
-        meta: {
-            title: '登录'
-        }
-    },
-    {
-        path: '/register',
-        component: () => import('@/views/login/register.vue'),
-        meta: {
-            title: '注册'
-        }
-    },
+
     {
         path: '/home',
         name: 'Home',
@@ -225,22 +207,7 @@ const routes = [
             title: 'CMMI评估'
         }
     },
-    {
-        path: '/productService',
-        name: 'ProductService',
-        component: () => import('@/views/front/ProductService.vue'),
-        meta: {
-            title: '产品与服务'
-        }
-    },
-    {
-        path: '/business',
-        name: 'Business',
-        component: () => import('@/views/front/Business.vue'),
-        meta: {
-            title: '招商'
-        }
-    },
+    
     // 工具
     {
         path: '/hstools',

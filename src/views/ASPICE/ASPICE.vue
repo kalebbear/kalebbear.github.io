@@ -41,14 +41,13 @@ import Adv from './components/Adv'
 import Steps from './components/Steps'
 import Fea from './components/Fea'
 import Ind from './components/Ind'
-import ProductCarousel from './components/ProductCarousel' // 引入新组件
+
 import { getAllCertificates, getFooterData } from '@/api/index' // 引入API方法
 // import Adv from './components/Adv.vue'
 export default {
     name: 'Home',
     components: {
         Banner, // 轮播图
-        ProductCarousel, // 横向商品
         Adv,
         Steps,
         Fea,

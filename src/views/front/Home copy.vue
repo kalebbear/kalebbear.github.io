@@ -27,7 +27,6 @@
         </div>
 			</el-card>
       <!-- 新增的商品卡片轮播图组件 -->
-      <ProductCarousel />
       
 		</div>
 		<Footer class="top"/>
@@ -36,13 +35,11 @@
 
 <script>
 import Banner from './components/Banner'
-import ProductCarousel from './components/ProductCarousel' // 引入新组件
 
 export default {
     name: 'Home',
     components: {
       Banner,// 轮播图
-      ProductCarousel // 横向商品
      },
     props: {},
     watch: {},

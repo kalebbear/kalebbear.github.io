@@ -53,14 +53,11 @@ import Fea from './components/Fea'
 import Hskh from './components/Hskh'
 import Cjwt from './components/Cjwt'
 
-import ProductCarousel from './components/ProductCarousel' // 引入新组件
-// import CMMIAssessmentsChart from './CMMIAssessmentsChart'
 import { getAllCertificates, getFooterData } from '@/api/index' // 引入API方法
 export default {
     name: 'Home',
     components: {
         Banner, // 轮播图
-        ProductCarousel, // 横向商品
         Adv,
         Steps2,
         Fea,

@@ -135,11 +135,11 @@
 
                         <p class="pg1">华赛咨询服务流程采用国际先进的管理变革模型IDEAL模型，它是由SEI在PDCA循环理论上研究得出的。专门用于指导企业逐步提升管理能力。</p>
                         <p class="pg1">IDEAL模型关注于建立一个持续改善机制，它包含5个阶段:初始化阶段(Initiating),诊断阶段(Diagnosing),建立阶段(Establishing),行动阶段(Acting),经验教训总结阶段(Learning)。每个阶段由多个活动组成，IDEAL正是采用这五个阶段的首字母命名的。</p>
-                        <p class="pg1">　<img alt="IDEAL模型" width="435" height="290" longdesc="http://www.huasaiinfo.com/images/ideal_full_color.gif" src="http://www.huasaiinfo.com/images/ideal_full_color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></p>
+                        <p class="pg1">　<img alt="IDEAL模型" width="435" height="290" longdesc="@/assets/images/ideal_full_color.gif" src="@/assets/images/ideal_full_color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></p>
                         <p class="pg1">IDEAL模型为我们提供了以各浅显易懂的、标准的、流程改善的方法，它详细描述流程改善的步骤，指导企业建立一个长期的、持续的流程改善机制。经过广泛应用证明IDEAL模型能够为企业带来巨大价值。</p>
                         <p class="pg1">以下详细描述IDEAL各阶段活动</p>
                         <p class="pg1 pgheader">1. 起始阶段 (Initiating)</p>
-                        <p class="pg1"><img alt="initiating" width="253" height="86" longdesc="http://www.huasaiinfo.com/images/initiating.color.gif" src="http://www.huasaiinfo.com/images/initiating.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></p>
+                        <p class="pg1"><img alt="initiating" width="253" height="86" longdesc="@/assets/images/initiating.color.gif" src="@/assets/images/initiating.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></p>
                         <p class="pg1">本阶段是 IDEAL 模式的起点，在这个阶段，要构建流程改善的基础架构，定义组织内每个角色及其职责，根据组织的愿景、策略及过去的经验，拟定改进计划。 可分为下面四个部分：</p>
                         <p class="pg1">(1) 变革的刺激 (Stimulus for Change)</p>
                         <p class="pg1">对企业而言，了解组织变革的诱因是非常重要的。 它可能来自内部管理阶层的命令，亦可能是一个突发事件，不论这个刺激是什么，它都可能影响所投入的人力，执行的方法及最后的结果。 为改变而改变，通常不会有明显的改善；唯有要求变革的动机越强，成功的机率才越大。</p>
@@ -150,7 +150,7 @@
                         <p class="pg1">(4) 建立基础架构 (Charter infrastructure)</p>
                         <p class="pg1">一旦变革的的动机和工作内容都已了解，高层亦承诺支持这项行动，便可建立一个机制来管理变革的实施细节。 这个机制可能是临时或永久的，它的大小和复杂度亦随着变革的特性而变，对于一个小的变革，可能只需要一个兼职的员工；对于一个大的变革，可能需要整个组织 2% - 3% 的人力。</p>
                         <p class="pg1 pgheader">2. 诊断阶段 (Diagnosing</p>
-                        <p img alt="diagnosing" width="157" height="126" longdesc="http://www.huasaiinfo.com/images/diagnosing.color.gif" src="http://www.huasaiinfo.com/images/diagnosing.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" />
+                        <p img alt="diagnosing" width="157" height="126" longdesc="@/assets/images/diagnosing.color.gif" src="@/assets/images/diagnosing.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" />
                         </p>
                         <p class="pg1">诊断目前的工作模式，由此确定管理改善的工作目标。 首先要确定用于诊断的检查标准，以确保流程改善的要点与企业的战略目标一致。 然后规划并收集企业运营相关信息，包括人力资源水平、历史习惯、强项、弱项等，最后制作诊断结果及改进建议报告。 主要分为下面两个部分工作：</p>
                         <p class="pg1">(1) 了解目前的状况及期望的目标 (Characterize Current &amp; Desired Status)</p>
@@ -158,7 +158,7 @@
                         <p class="pg1">(2) 发展建议方案 (Develop Recommendations)</p>
                         <p class="pg1">诊断工作通常由华赛公司具有丰富经验的专家在企业管理人员的协助下进行，后续改善工作将在此调查结果的基础上开展。</p>
                         <p class="pg1 pgheader">3. 建立阶段 (Establishing)</p>
-                        <p class="pg1"><img alt="establishing" width="197" height="115" longdesc="http://www.huasaiinfo.com/images/establishing.color.gif" src="http://www.huasaiinfo.com/images/establishing.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></p>
+                        <p class="pg1"><img alt="establishing" width="197" height="115" longdesc="@/assets/images/establishing.color.gif" src="@/assets/images/establishing.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></p>
                         <p class="pg1">拟定一个计划，说明需如何达到目标。 在此阶段企业需决定改善的行动和其优先顺序，并寻找适当的解决方案，将起始阶段所定义的一般流程改善目标细化为更为明确的目标，并配置行动所需的资源。 可分为下面三个部分：</p>
                         <p class="pg1">(1) 设定优先顺序 (Set priorities)</p>
                         <p class="pg1">根据问题的影响大小、紧急程度、可用的资源等各方面的因素设定改进的优先顺序</p>
@@ -167,7 +167,7 @@
                         <p class="pg1">(3) 规划行动方案 (Plan Actions)</p>
                         <p class="pg1">总体方案确定后，就可以规划详细的执行计划，它包含进度安排、工作内容和里程碑、资源、角色和职责、度量、风险管理策略等等。</p>
                         <p class="pg1 pgheader">4.行动阶段(Acting)</p>
-                        <p class="pg1" <img alt="acting" width="130" height="236" longdesc="http://www.huasaiinfo.com/images/acting.color.gif" src="http://www.huasaiinfo.com/images/acting.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" />
+                        <p class="pg1" <img alt="acting" width="130" height="236" longdesc="@/assets/images/acting.color.gif" src="@/assets/images/acting.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" />
                         </p>
                         <p class="pg1">实施行动计划。 持续细化行动计划，逐一解决诊断阶段所发现的问题。 试行解决方案后，选出最适合企业的方案，最后全面推广和实施。 可分为下面四个部分：</p>
                         <p class="pg1">(1) 提出解决方案 (Create Solution)</p>
@@ -179,7 +179,7 @@
                         <p class="pg1">(4) 推展解决方案 (Implement Solution)</p>
                         <p class="pg1">一旦解决方案经过验证是可行的，就可以将其推广至整个组织。 可使用不同的方法来执行，如由上而下 (Top-down) ：从组织的最高层往下推广；及时 (just-in-time) ：一个专案接着一个专案推动。 没有哪一种方法是最好的，根据组织的环境和改善的特性来决定使用哪种方法。</p>
                         <p class="pg1 pgheader">5.经验教训总结阶段(Learning)</p>
-                        <p class="pg1"></p><img alt="learning" width="158" height="113" longdesc="http://www.huasaiinfo.com/images/learning.color.gif" src="http://www.huasaiinfo.com/images/learning.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></p>
+                        <p class="pg1"></p><img alt="learning" width="158" height="113" longdesc="@/assets/images/learning.color.gif" src="@/assets/images/learning.color.gif" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></p>
                         <p class="pg1">总结过程改进的经验和教训，以供 IDEAL 模式下一个循环时使用，确保所使用的策略、方法及组织架构是最佳的；修正或调整改善流程，使下一循环的流程改善工作更有效率。 可分为下面两个部分：</p>
                         <p class="pg1">(1) 分析与验证 (Analyze and Validate)</p>
                         <p class="pg1">在这个过程中，我们要检讨下列问题，改善的努力是否达到预期的目标？哪些问题得到了改善？哪些方面的工作变得更有效率了？在整个过程所获得的经验教训，都要进行收集，分析，汇总及记录成文件。</p>

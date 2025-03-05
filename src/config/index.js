@@ -1,6 +1,4 @@
-// const baseUrl = 'http://127.0.0.1:8088'   // 测试环境地址
-const baseUrl = 'http://81.71.17.188:8088' // 产线地址
-// const baseUrl = process.env.VUE_APP_API_URL; // 使用环境变量
+
 
 const menuList = [
 
@@ -217,7 +215,7 @@ const menuLista = [
 const footList = [
     {
         name: '关于华赛',
-        path: '/ProductService',
+        path: '',
         subMenu: [
             {
                 name: '了解华赛',
@@ -235,7 +233,7 @@ const footList = [
     },
     {
         name: '华赛业务',
-        path: '/Business',
+        path: '',
         subMenu: [
             {
                 name: '咨询服务',
@@ -253,7 +251,7 @@ const footList = [
     },
     {
         name: '华赛研究',
-        path: '/Business',
+        path: '',
         subMenu: [
             {
                 name: '华赛工具',
@@ -271,7 +269,7 @@ const footList = [
     },
     {
         name: '社区建设',
-        path: '/Business',
+        path: '',
         subMenu: [
             {
                 name: '社区活动',
@@ -297,7 +295,7 @@ const footList = [
     },
     {
         name: '联系我们',
-        path: '/about',
+        path: '',
         subMenu: [
             {
                 name: '在线方式',
@@ -311,7 +309,6 @@ const footList = [
     },
 ]
 export {
-    baseUrl,
     menuList,
     menuLista,
     footList

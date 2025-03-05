@@ -13,7 +13,7 @@
             <div class="cont">
                 <table width="650" border="0" align="center" cellpadding="0" cellspacing="10" style="color: rgb(84, 84, 84); font-family: 宋体; ">
                     <tr>
-                        <td><a href="#"><img src="http://www.huasaiinfo.com/images/cmmilogo3.jpg"></a></td>
+                        <td><a href="#"><img src="@/assets/images/cmmilogo3.jpg"></a></td>
                         <td>
                             <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;">官方对于申请资质认证的企业没有任何“硬性”条件，任何企业都可以申请CMMI认证。不像国内的一些认证要求营业额、注册资金、人数、办公场地等等要求。</p>
                             <p style="padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(102, 102, 102); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal;">CMMI认证是一个企业管理认证，检查的是企业日常管理流程是否规范，类似于ISO是检查企业日常开展工作的方式。</p>
