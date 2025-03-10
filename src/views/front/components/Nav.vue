@@ -5,14 +5,14 @@
                 <img src="@/assets/images/fav.png" alt="logo" height="50px" width="50px">
                 <div>
                     <p class="cn">深圳华赛信息咨询有限公司</p>
-                    <p class="en">Shenzhen Huasai lnformation Gonsulting Co.,Ltd</p>
+                    <p class="en">Shenzhen Huasai lnformation Consulting Co.,Ltd</p>
                 </div>
                 <!-- <div v-else style="font-size:26px;margin-right:50px" @click="$router.push('/home')">logo</div> -->
 
             </div>
             <div class="nav-items">
-                <div v-for="(item, i) in navList" :key="i" @click="toDetail(item, i)" @mouseover="menuChange(item)" :class="['nav-item', { 'active': $route.path === item.path }]">
-                    {{ item.name }}
+                <div v-for="(item, i) in navList" :key="i" @click="toDetail(item, i)" :class="['nav-item', { 'active': $route.path === item.path }]" @mouseover="menuChange(item)" @mouseleave="menuLeave(item)">
+                    <span>{{ item.name }}</span>
                 </div>
             </div>
             <div class="tel_box">
@@ -26,19 +26,43 @@
                 </div>
             </div>
         </div>
-        <div class="subBox" v-if="showSub">
-            <div style="width:50%;text-align:right;margin:40px;display: flex;justify-content: flex-end;align-self: center;">
-                <div style="">
-                    <div v-for="subItme in subList" class="subItem" @click="routeto(subItme.path)">
-                        {{subItme.name}}
-                    </div>
-                </div>
+        <template v-for="mm in navList">
+            <template v-if="mm.name === '关于华赛'||mm.name === '华赛业务'">
+                <transition name="fade">
+                    <div class="subBox" v-show="mm.showSub&&subMenuData.name===mm.name">
+                        <div style="width:50%;text-align:right;margin:40px;display: flex;justify-content: flex-end;align-self: center;">
+                            <div style="">
+                                <div v-for="subItme in subList" class="subItem" @click="routeto(subItme.path)">
+                                    {{subItme.name}}
+                                </div>
+                            </div>
 
-            </div>
-            <div style="width:50%;margin-left:40px;background:#eee;padding:40px;">
-                <img :src="require(`@/assets${pic}`)" alt="" width="400" height="200" style="margin:60px">
-            </div>
-        </div>
+                        </div>
+                        <div style="width:50%;margin-left:40px;background:#eee;padding:40px;">
+                            <img :src="require(`@/assets${pic}`)" alt="" width="400" height="200" style="margin:60px">
+                        </div>
+                    </div>
+                </transition>
+            </template>
+            <template v-if="mm.name === '社区建设'||mm.name === '华赛研究'">
+                <transition name="fade">
+                    <div class="subBox" v-show="mm.showSub&&subMenuData.name===mm.name">
+                        <div style="width:50%;text-align:right;background:#eee;padding:40px;">
+                            <img :src="require(`@/assets${pic}`)" alt="" width="400" height="200" style="margin:60px">
+                        </div>
+                        <div style="width:50%;text-align:left;margin:40px;display: flex;justify-content: flex-start;align-self: center;">
+                            <div style="">
+                                <div v-for="subItme in subList" class="subItem" @click="routeto(subItme.path)">
+                                    {{subItme.name}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </transition>
+            </template>
+        </template>
     </div>
 </template>
 
@@ -52,8 +76,10 @@ export default {
             navList: [],
             pic: '/images/banner1.jpg',
             showSub: false,
+            subMenuData: {},
             subList: [{}],
             register: {},
+            subType: 1,
             isLogin: null,
             logoImage: null, // 新增 logoImage 数据属性
         }
@@ -76,20 +102,35 @@ export default {
     },
 
     methods: {
+        menuLeave() {
+            console.log('__@@')
+            // this.showSub = false
+        },
         menuChange(item) {
+            console.log('__')
+            // this.showSub = false
+            this.subMenuData = item
+            // setTimeout(() => {
             if (item.subMenu) {
                 this.subList = item.subMenu
                 if (item.pic) {
                     this.pic = item.pic
                 }
+                item.showSub = true
                 this.showSub = true
             } else {
+                item.showSub = false
                 this.showSub = false
             }
+            // if (item.name === '华赛业务' ||item.name === 'guabyu')
+            // }, 100)
         },
         menuhide() {
             this.subList = []
             this.showSub = false
+            this.navList.forEach((e) => {
+                e.showSub = false
+            })
         },
         routeto(path) {
             if (path) {
@@ -120,6 +161,13 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+    opacity: 0;
+}
 .nav {
     position: fixed;
     top: 0;
@@ -234,7 +282,7 @@ export default {
                 text-align-last: justify;
             }
             .tel {
-                width: 130px;
+                width: 145ind_header2px;
                 display: inline-block;
                 text-align: justify;
                 text-align-last: justify;

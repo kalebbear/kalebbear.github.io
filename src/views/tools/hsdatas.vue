@@ -90,11 +90,8 @@ export default {
     a {
         color: #666;
         line-height: 30px;
+        font-size: 14px;
         text-decoration: #007dc6; /* 去除下划线 */
-        background-color: transparent; /* 背景透明 */
-        font-size: inherit; /* 继承父元素的字体大小 */
-        font-family: inherit; /* 继承父元素的字体 */
-        font-weight: inherit; /* 继承父元素的字体粗细 */
         padding: 0; /* 去除内边距 */
         margin: 0; /* 去除外边距 */
         border: none; /* 去除边框 */

@@ -12,7 +12,7 @@
                             <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
                         </div>
                         <div class="center">
-                            <img :src="require('@/assets/images/zxt1.png')" alt="">
+                            <img :src="require('@/assets/images/zxt1.png')" height="380" alt="">
                             <!-- <CMMIAssessmentsChart /> -->
                         </div>
                     </el-card>
@@ -25,18 +25,105 @@
                             <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
                         </div>
                         <div>
-                            <img :src="require('@/assets/images/zzt1.png')" alt="" width="100%" height="380">
+                            <img :src="require('@/assets/images/CMMI_tb1.svg')" alt="" width="100%" height="380">
+                        </div>
+                    </el-card>
+                </el-col>
+            </el-row>
+            <el-row :gutter="20" style="margin-top:20px">
+                <el-col :span="12">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>中国三年内认证数量<i style="color:red;"></i>
+                            </span>
+                            <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
+                        </div>
+                        <div class="center">
+                            <img :src="require('@/assets/images/tb3.png')" alt="" height="380">
+                            <!-- <CMMIAssessmentsChart /> -->
+                        </div>
+                    </el-card>
+                </el-col>
+                <el-col :span="12">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>全球三年内认证数量<i style="color:red;"></i>
+                            </span>
+                            <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
+                        </div>
+                        <div>
+                            <img :src="require('@/assets/images/tb4.png')" alt="" height="380">
                         </div>
                     </el-card>
                 </el-col>
             </el-row>
 
         </div>
+
+        <div class="wp1360 whyBox">
+            <el-card class="card" style="padding-bottom:20px">
+                <h3>
+                    为什么要进行cmmi评估认证?
+                </h3>
+                <!-- <p class="more" @click="()=>{$router.push('/whyAspice')}" style="font-size:14px;">
+                    了解更多>>
+                </p> -->
+                <!-- 为什么要进行cmmi评估认证
+1.竞标需要（上游企业用来判断供应商研发能力水平的资质，常用于竞标必备条件或加分项）
+2.提升企业形象（证明企业研发能力达到国际水平，管理规范、研发效率高，产品质量可被信任。）
+3.了解企业当前研发管理能力水平（定期进行评估认证确保企业保持有竞争力的研发能力水平）
+4.寻找改进机会（收集研发管理相关的改善建议，识别研发流程中的不足，确定后续改进方向。）
+
+华赛优势
+1.官方授权审核机构（其它公司大多是中介，接单后还是要转包给审核机构）
+2.白金审核机构（最高级别审核机构，全国仅五家，华南地区唯一）
+3.市场占有率高（多年来一直是全国前两位，数千个成功案例）
+4.知名客户案例多（包括华为、腾讯、艾默生、微软、创维、TCL、美的等）
+5.评估师最多（十多位主任评估师和两位高成熟度评估师，其它大多数公司没有自己的评估师。）
+6.资质最全（覆盖开发、服务、数据管理、安全所有领域资质） -->
+                <el-row :gutter="20">
+                    <el-col :span="6">
+                        <div class="whyItem">
+                            <img src="@/assets/images/icon/i1.png" alt="" width="60">
+                            <div class="res">竞标需要</div>
+                            <div class="dec">上游企业用来判断供应商研发能力水平的资质，常用于竞标必备条件或加分项
+                            </div>
+                        </div>
+                    </el-col>
+                    <el-col :span="6">
+                        <div class="whyItem">
+                            <img src="@/assets/images/icon/i8.png" alt="" width="60">
+                            <div class="res">提升企业形象</div>
+                            <div class="dec">证明企业研发能力达到国际水平，管理规范、研发效率高，产品质量可被信任。
+                            </div>
+                        </div>
+                    </el-col>
+                    <el-col :span="6">
+                        <div class="whyItem">
+                            <img src="@/assets/images/icon/i9.png" alt="" width="60">
+                            <div class="res">了解企业当前研发管理能力水平</div>
+                            <div class="dec">定期进行评估认证确保企业保持有竞争力的研发能力水平
+                            </div>
+                        </div>
+                    </el-col>
+                    <el-col :span="6">
+                        <div class="whyItem">
+                            <img src="@/assets/images/icon/i3.png" alt="" width="60">
+                            <div class="res">寻找改进机会
+                            </div>
+                            <div class="dec">收集研发管理相关的改善建议，识别研发流程中的不足，确定后续改进方向。
+                            </div>
+                        </div>
+                    </el-col>
+                </el-row>
+            </el-card>
+        </div>
+
         <Steps2 />
         <!-- <Fea /> -->
         <div class="" style="margin-top:20px">
             <el-card class="box-card wp1360">
-                <img :src="require('@/assets/images/hs.jpg')" alt="" width="" height="">
+                <img :src="require('@/assets/images/hs3.jpg')" alt="" width="" height="">
             </el-card>
         </div>
         <Hskh />
@@ -104,6 +191,41 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.whyBox {
+    margin: 20px auto;
+    .card {
+        background: #f5f6f7;
+    }
+    h3 {
+        font-size: 32px;
+        margin: 20px 0 40px;
+    }
+    .more {
+        text-align: right;
+        color: #666;
+        margin: 0 0 20px;
+        cursor: pointer;
+    }
+    .whyItem {
+        background: #fff;
+        text-align: center;
+        padding: 20px 30px;
+        height: 230px;
+        cursor: pointer;
+        img {
+            margin-top: 20px;
+        }
+        .res {
+            color: #000;
+            margin: 0 0 20px;
+        }
+        .dec {
+            color: #666;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+}
 .hotline-container {
     display: flex;
     align-items: center;

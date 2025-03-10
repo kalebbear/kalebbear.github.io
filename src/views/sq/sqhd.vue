@@ -211,24 +211,24 @@ export default {
 }
 
 .page-header {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 20px 0;
 }
 
 .page-header h1 {
-    font-size: 2.5rem;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 .page-header p {
-    font-size: 1.2rem;
+    font-size: 16px;
 }
 
 .section-title {
     text-align: center;
     margin: 60px 0 40px;
-    color: #1e50a2;
+    color: #007dc6;
     position: relative;
 }
 
@@ -237,7 +237,7 @@ export default {
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #e60012;
+    background-color: #007dc6;
     margin: 15px auto 0;
 }
 
@@ -272,7 +272,7 @@ export default {
 
 .event-date {
     display: inline-block;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -281,7 +281,7 @@ export default {
 }
 
 .event-title {
-    font-size: 1.3rem;
+    font-size: 16px;
     margin-bottom: 10px;
     color: #333333;
 }
@@ -293,7 +293,7 @@ export default {
 
 .event-link {
     display: inline-block;
-    color: #1e50a2;
+    color: #007dc6;
     font-weight: bold;
     text-decoration: none;
     border-bottom: 2px solid transparent;
@@ -301,7 +301,7 @@ export default {
 }
 
 .event-link:hover {
-    border-color: #1e50a2;
+    border-color: #007dc6;
 }
 
 .calendar-section {
@@ -324,7 +324,7 @@ export default {
 
 .calendar-date {
     font-weight: bold;
-    color: #e60012;
+    color: #007dc6;
     margin-bottom: 10px;
 }
 
@@ -352,23 +352,23 @@ export default {
 .contribution-icon {
     width: 60px;
     height: 60px;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.8rem;
+    font-size: 20px;
     flex-shrink: 0;
 }
 
 .contribution-content h3 {
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 10px;
 }
 
 .join-community {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 80px 0;
     text-align: center;
@@ -381,13 +381,13 @@ export default {
 .join-community p {
     max-width: 700px;
     margin: 0 auto 40px;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
 
 .join-btn {
     display: inline-block;
     background-color: #ffffff;
-    color: #1e50a2;
+    color: #007dc6;
     font-weight: bold;
     padding: 12px 30px;
     border-radius: 4px;

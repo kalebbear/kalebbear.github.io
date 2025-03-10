@@ -266,7 +266,7 @@ export default {
 }
 
 .security-header {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 60px 40px;
     text-align: center;
@@ -295,7 +295,7 @@ export default {
 
 .section-title {
     font-size: 28px;
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 15px;
@@ -308,7 +308,7 @@ export default {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #e60012;
+    background-color: #007dc6;
 }
 
 .section-description {
@@ -327,7 +327,7 @@ export default {
 }
 
 .security-highlight h2 {
-    color: #1e50a2;
+    color: #007dc6;
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -368,7 +368,7 @@ export default {
 }
 
 .security-card h3 {
-    color: #1e50a2;
+    color: #007dc6;
     font-size: 20px;
     margin-bottom: 15px;
     display: flex;
@@ -382,6 +382,7 @@ export default {
 .security-card p {
     color: #666;
     line-height: 1.6;
+    font-size: 14px;
 }
 
 .security-list {
@@ -397,7 +398,7 @@ export default {
 
 .security-list li:before {
     content: '✓';
-    color: #1e50a2;
+    color: #007dc6;
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -418,24 +419,25 @@ export default {
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
 }
 
 .measure-icon {
     min-width: 60px;
     height: 60px;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .measure-content h4 {
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .measure-content p {
@@ -444,7 +446,7 @@ export default {
 }
 
 .security-commitment {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 60px 40px;
     text-align: center;
@@ -452,12 +454,12 @@ export default {
 }
 
 .security-commitment h2 {
-    font-size: 28px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .security-commitment p {
-    font-size: 16px;
+    font-size: 14px;
     max-width: 800px;
     margin: 0 auto 30px;
     line-height: 1.6;
@@ -477,7 +479,7 @@ export default {
 }
 
 .commitment-item h3 {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
@@ -497,9 +499,9 @@ export default {
 }
 
 .faq-item h3 {
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .faq-item p {
@@ -534,7 +536,7 @@ export default {
 }
 
 .contact-section h3 {
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 20px;
 }
 
@@ -583,7 +585,7 @@ export default {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     display: flex;
     align-items: center;
@@ -596,7 +598,7 @@ export default {
 .phase h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #1e50a2;
+    color: #007dc6;
 }
 
 .phase p {

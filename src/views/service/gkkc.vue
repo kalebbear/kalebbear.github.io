@@ -14,7 +14,7 @@
                 <el-collapse-item :name="1">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">需求工程<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">需求工程<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -68,7 +68,7 @@
                 <el-collapse-item :name="2">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">测试工程<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">测试工程<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -124,7 +124,7 @@
                 <el-collapse-item :name="3">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">Introduction to CMMI<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">Introduction to CMMI<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -191,7 +191,7 @@
                 <el-collapse-item :name="4">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">项目管理<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">项目管理<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -203,7 +203,7 @@
                 <el-collapse-item :name="5">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">企业战略管理<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">企业战略管理<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>

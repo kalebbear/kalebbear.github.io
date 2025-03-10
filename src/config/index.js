@@ -23,7 +23,10 @@ const menuList = [
                 name: '咨询团队',
                 path: '/team'
             },
-
+            {
+                name: '华赛荣耀',
+                path: '/honor'
+            },
             {
                 name: '行业覆盖',
                 path: '/hy'

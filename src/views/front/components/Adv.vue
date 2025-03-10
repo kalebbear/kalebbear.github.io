@@ -97,12 +97,13 @@ export default {
 
 <style lang="less" scoped>
 .adv_header {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
+    font-weight: bold;
     margin: 40px;
 }
 .advbox {
-    height: 160px;
+    height: 130px;
     display: flex;
     position: relative;
     img {
@@ -112,12 +113,13 @@ export default {
         margin: 20px 0 0 20px;
     }
     .advtitle {
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 900;
     }
     .advdec {
         color: #666;
         margin-top: 13px;
+        font-size: 14px;
     }
     .adv_num {
         position: absolute;

@@ -9,7 +9,7 @@
                     <el-collapse-item v-for="(item,i) in list" :key="i" :name="item.title">
                         <template slot="title">
                             <!-- <div> -->
-                            <div style="font-size:26px;color:#666;margin:20px 0 0 20px;;" :class="{'active':item.title===active}">{{item.title}}<i class="header-icon el-icon-info" color="red"></i></div>
+                            <div style="font-size:20px;color:#333;margin:20px 0 0 20px;;" :class="{'active':item.title===active}">{{item.title}}<i class="header-icon el-icon-info" color="red"></i></div>
                             <!-- <br> -->
                             <div style="font-size:16px;color:#666;margin:0 0 0 20px;;">{{item.wt}}</div>
                             <!-- </div> -->

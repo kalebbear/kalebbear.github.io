@@ -9,7 +9,7 @@
             <div class="hsHeader">
                 <!-- <h3>覆盖行业</h3> -->
             </div>
-            <div class="cont newAboutUs">
+            <div class="cont newAboutUs pg1">
 
                 <p>
                     华赛公司业务覆盖国内绝大部分城市，在多个城市设有办事处和子公司，目前业务主要集中在广东和北京。

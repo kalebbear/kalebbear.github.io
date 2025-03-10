@@ -84,7 +84,7 @@
                             </div>
                         </div>
 
-                        <h3 style="color: #1e50a2; margin-top: 40px; margin-bottom: 20px;">廉洁监督落实</h3>
+                        <h3 style="color: #007dc6; margin-top: 40px; margin-bottom: 20px;">廉洁监督落实</h3>
                         <div class="commitment-steps">
                             <div class="step-card">
                                 <div class="step-number">1</div>
@@ -201,14 +201,14 @@ export default {
 }
 
 .integrity-header {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 60px 40px;
     text-align: center;
 }
 
 .integrity-header h1 {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -229,8 +229,8 @@ export default {
 }
 
 .section-title {
-    font-size: 28px;
-    color: #1e50a2;
+    font-size: 20px;
+    color: #007dc6;
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 15px;
@@ -243,11 +243,11 @@ export default {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #e60012;
+    background-color: #007dc6;
 }
 
 .section-content {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
     color: #444;
     max-width: 1200px;
@@ -285,9 +285,9 @@ export default {
 }
 
 .principle-card h3 {
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
 }
@@ -295,14 +295,14 @@ export default {
 .principle-card h3 span {
     width: 32px;
     height: 32px;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-right: 12px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .principle-card p {
@@ -324,7 +324,7 @@ export default {
 
 .integrity-list li:before {
     content: '•';
-    color: #1e50a2;
+    color: #007dc6;
     position: absolute;
     left: -10px;
     font-weight: bold;
@@ -338,7 +338,7 @@ export default {
 }
 
 .contact-section h3 {
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 20px;
 }
 
@@ -368,7 +368,7 @@ export default {
 }
 
 .quote-box {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 40px;
     border-radius: 8px;
@@ -377,12 +377,12 @@ export default {
 }
 
 .quote-box h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .quote-box p {
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
     max-width: 800px;
     margin: 0 auto;
@@ -406,7 +406,7 @@ export default {
 .step-number {
     width: 40px;
     height: 40px;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -417,7 +417,7 @@ export default {
 }
 
 .step-card h4 {
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 10px;
 }
 

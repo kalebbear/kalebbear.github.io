@@ -147,7 +147,9 @@ export default {
         padding: 50px 72px 80px;
 
         h3 {
-            font-size: 30px;
+            font-size: 16px;
+            color: #666;
+            font-weight: normal;
             margin: 0 0 60px;
         }
         div {
@@ -164,11 +166,12 @@ export default {
 
     .hheader {
         h3 {
-            font-size: 38px;
+            font-size: 30px;
         }
         .dec_box {
             color: #999;
             margin-bottom: 50px;
+            font-size: 14px;
             margin-top: 15px;
             display: flex;
             justify-content: space-between;
@@ -187,7 +190,7 @@ export default {
         width: 700px;
         color: #fff;
         .big_font {
-            font-size: 36px;
+            font-size: 30px;
         }
         .read_more {
             position: absolute;

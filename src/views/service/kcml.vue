@@ -171,11 +171,13 @@ export default {
     margin-bottom: 20px;
 }
 .fwheader {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 39px;
+    color: #333;
 }
 .fwli {
-    line-height: 26px;
+    line-height: 28px;
+    font-size: 14px;
     color: #666;
 }
 </style>

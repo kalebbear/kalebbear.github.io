@@ -15,10 +15,10 @@
                     <el-collapse-item v-for="(item,i) in list" :key="i" :name="i">
                         <template slot="title">
                             <!-- <div> -->
-                            <div>{{item.title}}</div>
+                            <div style="font-size:16px;">{{item.title}}</div>
 
                         </template>
-                        <div style="color:#999">{{item.jd}}</div>
+                        <div style="color:#999" class="pg1">{{item.jd}}</div>
                     </el-collapse-item>
                 </el-collapse>
             </div>

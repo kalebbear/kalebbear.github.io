@@ -9,7 +9,7 @@ const routes = [
         path: '/',
         redirect: '/home',
     },
-    
+
     {
         path: '/aspice',
         name: 'aspice',
@@ -207,7 +207,7 @@ const routes = [
             title: 'CMMI评估'
         }
     },
-    
+
     // 工具
     {
         path: '/hstools',
@@ -258,6 +258,14 @@ const routes = [
         component: () => import('@/views/front/About.vue'),
         meta: {
             title: '关于我们'
+        }
+    },
+    {
+        path: '/honor',
+        name: 'honor',
+        component: () => import('@/views/about/honor.vue'),
+        meta: {
+            title: '华赛荣耀'
         }
     },
     {

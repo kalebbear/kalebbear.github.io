@@ -48,13 +48,13 @@ export default {
             position: absolute;
             line-height: 44px;
             font-style: italic;
-            font-size: 20px;
+            font-size: 16px;
             top: 80px;
             left: 120px;
         }
         .fea_tit {
             font-weight: 900;
-            font-size: 45px;
+            font-size: 38px;
             position: absolute;
             right: 120px;
             bottom: 100px;

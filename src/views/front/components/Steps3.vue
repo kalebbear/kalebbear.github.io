@@ -4,8 +4,8 @@
             <div class="steps_header">
                 实施流程
 
-                <span class="stepHeader" style="color:#666;font-size:20px;cursor:pointer;float: right;top: 20px;position: relative;" @click="()=>{$router.push('/carryAspice')}">流程详情
-                    <img :src="require('@/assets/images/search.png')" width="20" style="margin:2px 0 0 0">
+                <span class="stepHeader" style="color:#666;font-size:16px;cursor:pointer;float: right;top: 20px;position: relative;" @click="()=>{$router.push('/carryAspice')}">流程详情
+                    <img :src="require('@/assets/images/search.png')" width="16" style="margin:2px 0 0 0">
                 </span>
             </div>
             <div class="steps_items">
@@ -125,7 +125,8 @@ export default {
     overflow: hidden;
 }
 .steps_header {
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
     padding: 40px;
 }

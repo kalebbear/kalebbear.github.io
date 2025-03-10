@@ -14,7 +14,7 @@
                 <el-collapse-item :name="1">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">风险管理<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">风险管理<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -37,7 +37,7 @@
                 <el-collapse-item :name="2">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">绩效管理推行实务<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">绩效管理推行实务<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -56,7 +56,7 @@
                 <el-collapse-item :name="3">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">配置管理<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">配置管理<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -86,7 +86,7 @@
                 <el-collapse-item :name="4">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">测试工程<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">测试工程<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -115,7 +115,7 @@
                 <el-collapse-item :name="5">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">IPD集成产品开发<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">IPD集成产品开发<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -144,7 +144,7 @@
                 <el-collapse-item :name="6">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">产品规划<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">产品规划<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -170,7 +170,7 @@
                 <el-collapse-item :name="7">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">CMMI实务<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">CMMI实务<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -200,7 +200,7 @@
                 <el-collapse-item :name="8">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">需求工程<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">需求工程<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -243,7 +243,7 @@
                 <el-collapse-item :name="9">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">产品开发<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">产品开发<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -285,7 +285,7 @@
                 <el-collapse-item :name="10">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">产品管理<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">产品管理<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>
@@ -325,7 +325,7 @@
                 <el-collapse-item :name="11">
                     <template slot="title">
                         <!-- <div> -->
-                        <div style="font-size:20px;color:#666;">项目管理<i class="header-icon el-icon-info"></i></div>
+                        <div style="font-size:16px;color:#666;">项目管理<i class="header-icon el-icon-info"></i></div>
 
                     </template>
                     <div>

@@ -1,6 +1,19 @@
 <template>
     <div>
         <Nav />
+
+        <!-- <div class="wp1360"> -->
+        <!-- <el-image src="@/assets/images/wbq/qc.png" alt="" style="width:100%;height:100%" fit="cover" @error="handleImageError" /> -->
+        <!-- <div class="wp1360 banner_wrap">
+                <div class="banner_info">
+                    <p class="en_font">Automotive Software Process Improvement and Capacity dEtermination</p>
+                    <p class="big_font">汽车软件过改进和能力认定</p>
+                    <p class="small_font">汽车行业软件开发过程标准、汽车行业软件研发能力水平认定、汽车行业研发类型供应商的必备资质</p>
+                    <div class="read_more" @click="()=>{$router.push('/whatAspice')}">【进一步了解ASPICE】</div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+
         <div class="sp">
             <!-- <el-image src="@/assets/images/wbq/qc.png" alt="" style="width:100%;height:100%" fit="cover" @error="handleImageError" /> -->
             <div class="wp1360 banner_wrap">
@@ -13,14 +26,31 @@
             </div>
         </div>
 
-        <Steps />
-        <!-- <el-card class="top"> -->
-        <div class="wp1360 whyBox">
+        <div class="wp1360" style="margin:20px auto">
             <el-card class="card">
-                <h3>
+                <div class="flex">
+                    <img src="@/assets/images/wbq/sw1.jpg" alt="" height="380">
+                    <div style="align-self: flex-start;padding:20px">
+                        <h3 class="main_header" style="margin:10px;">
+                            什么是ASPICE?
+                        </h3>
+                        <div class="pg1">
+                            ASPICE全称是“Automotive Software Process Improvement and Capacity dEtermination”，汽车软件过程改进及能力评定，是汽车行业用于评价软件开发团队的研发能力水平的模型框架。最初由欧洲20多家主要汽车制造商共同制定，于2005年发布，目的是为了指导汽车零部件研发厂商的软件开发流程，从而改善车载软件的质量。
+                        </div>
+                        <div class="pg1">
+                            多年以来，ASPICE在欧洲汽车行业内被广泛用于研发流程改善及供应商的研发能力评价。
+                        </div>
+                        <div class="moreBtn" @click="()=>{$router.push('/whatAspice')}">查看更多>></div>
+                    </div>
+                </div>
+            </el-card>
+        </div>
+        <div class="wp1360 whyBox" style="margin:20px auto">
+            <el-card class="card">
+                <h3 class="center">
                     为什么要做ASPICE?
                 </h3>
-                <p class="more" @click="()=>{$router.push('/whyAspice')}">
+                <p class="more" @click="()=>{$router.push('/whyAspice')}" style="font-size:14px;">
                     了解更多>>
                 </p>
                 <el-row :gutter="20">
@@ -61,6 +91,9 @@
             </el-card>
         </div>
 
+        <Steps />
+        <!-- <el-card class="top"> -->
+
         <div class="wp1360">
             <div class="infoBox">
                 <el-card>
@@ -70,10 +103,10 @@
                         </div>
                         <div class="rbox">
                             <div class="rboxi">
-                                <el-button type="text" style="font-size:22px;"  @click="()=>{$router.push('/whatAspicerz')}"><i class="el-icon-thumb"></i>了解ASPICE认证</el-button>
+                                <el-button type="text" style="font-size:18px;" @click="()=>{$router.push('/whatAspicerz')}"><i class="el-icon-thumb"></i>了解ASPICE认证</el-button>
                             </div>
                             <div class="rboxi">
-                                <el-button type="text" style="font-size:22px;"  @click="()=>{$router.push('/carryAspicerz')}"><i class="el-icon-discount"></i>ASPICE认证流程</el-button>
+                                <el-button type="text" style="font-size:18px;" @click="()=>{$router.push('/carryAspicerz')}"><i class="el-icon-discount"></i>ASPICE认证流程</el-button>
 
                             </div>
                         </div>
@@ -216,6 +249,7 @@ export default {
     }
     .lj_dec {
         color: #999;
+        font-size: 14px;
     }
     .lj_site {
         color: #999;
@@ -272,6 +306,7 @@ export default {
         }
         .dec {
             color: #666;
+            font-size: 14px;
             text-align: left;
         }
     }
@@ -294,7 +329,7 @@ export default {
             font-size: 30px;
         }
         .big_font {
-            font-size: 36px;
+            font-size: 38px;
         }
         .read_more {
             position: absolute;

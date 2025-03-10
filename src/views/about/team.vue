@@ -10,7 +10,13 @@
             <div class="hsHeader">
                 <!-- <h3>咨询团队</h3> -->
             </div>
-            <div class="cont newAboutUs">
+            <div>
+                <p class="pg1">华赛的咨询师团队全部具有十年以上的大型企业研发管理经验，所有的咨询顾问都具备硕士和MBA及以上学历。其中一部分来自于国内外知名咨询机构的资深顾问，还有一部分来自华为、联想、西门子等大型企业的资深高管。</p>
+                <p class="pg1">华赛的咨询团队为众多企业提供了咨询和培训服务，涉及电力、能源、电信、电子、软件等行业。</p>
+                <p class="pg1">华赛咨询团队秉承“为客户创造价值”的宗旨，迅速融入到企业内部，踏实巧干，协助客户解决实际管理难题。凭借其敬业的工作态度和丰富管理知识，帮助一个又一个企业突破了管理瓶颈，克服了成长过程中的障碍，受到客户一致好评。< /p>
+                        <p><br /></p>
+            </div>
+            <!-- <div class="cont newAboutUs">
                 <div class="pg1 flex-container">
                     <img src="@/assets/images/teamwt.png" alt="">
                     吴涛，武汉大学计算机本科、北邮软件工程硕士、A SPICE Principal Assessor（国内仅7位）、CMMI官方授权评估师、CMMI授权讲师。18年研发行业经验，曾于世界五百企业担任研发经理职务。曾经在多家企业内部主导过程改进工作，擅长企业管理变革、推动管理流程落地，熟悉IPD、ASPICE、CMMI、SRUM、IATF16949、PSP，TSP等业界最佳管理方法，从事过软件工程师、项目经理、部门经理等职，有丰富的软件工程和部门管理经验，为200多家企业提供过研发管理相关咨询服务，其中包括艾默生、微软、华为、腾讯、TCL、美的、金山、旷视、南网、平安、康美等知名企业。
@@ -20,7 +26,7 @@
                 </div>
                 <el-divider><i class="el-icon-coffee-cup"></i></el-divider>
 
-                <!-- wqq -->
+       
                 <div class="pg1 flex-container">
                     <img src="@/assets/images/zwq1.png" alt="">
                     <div>
@@ -42,7 +48,7 @@
                 </div>
 
                 <el-divider><i class="el-icon-coffee-cup"></i></el-divider>
-                <!-- yd -->
+          
                 <div class="pg1 flex-container">
                     <img src="@/assets/images/yd.png" alt="">
                     <div>
@@ -64,7 +70,7 @@
                 </div>
 
                 <el-divider><i class="el-icon-coffee-cup"></i></el-divider>
-                <!-- yd -->
+          
                 <div class="pg1 flex-container">
                     <img src="@/assets/images/hg.png" alt="">
                     <div>
@@ -82,7 +88,7 @@
                     <img src="@/assets/images/hg2.png" alt=""><img src="@/assets/images/hg3.png" alt=""><img src="@/assets/images/hg4.png" alt="">
                 </div>
 
-            </div>
+            </div> -->
         </div>
 
         <Footer class="top" />

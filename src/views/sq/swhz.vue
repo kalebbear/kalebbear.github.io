@@ -320,14 +320,14 @@ export default {
 }
 
 .cooperation-header {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 60px 40px;
     text-align: center;
 }
 
 .cooperation-header h1 {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -349,7 +349,7 @@ export default {
 
 .section-title {
     font-size: 28px;
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 15px;
@@ -362,11 +362,11 @@ export default {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #e60012;
+    background-color: #007dc6;
 }
 
 .section-description {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     color: #555;
     margin-bottom: 40px;
@@ -387,6 +387,7 @@ export default {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 14px;
 }
 
 .partner-card:hover {
@@ -412,7 +413,7 @@ export default {
 }
 
 .partner-card h3 {
-    color: #1e50a2;
+    color: #007dc6;
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -425,7 +426,7 @@ export default {
 
 .partner-card a {
     display: inline-block;
-    color: #1e50a2;
+    color: #007dc6;
     font-weight: bold;
     text-decoration: none;
     border-bottom: 2px solid transparent;
@@ -433,7 +434,7 @@ export default {
 }
 
 .partner-card a:hover {
-    border-color: #1e50a2;
+    border-color: #007dc6;
 }
 
 .benefits-container {
@@ -466,7 +467,7 @@ export default {
 
 .benefits-list li:before {
     content: '✓';
-    color: #1e50a2;
+    color: #007dc6;
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -498,19 +499,19 @@ export default {
     transform: translateX(-50%);
     width: 40px;
     height: 40px;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .step-card h3 {
     margin-top: 15px;
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 15px;
 }
 
@@ -557,7 +558,7 @@ export default {
 }
 
 .case-content h3 {
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 15px;
     font-size: 20px;
 }
@@ -570,7 +571,7 @@ export default {
 
 .case-button {
     display: inline-block;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -591,12 +592,12 @@ export default {
 
 .contact-section h2 {
     font-size: 28px;
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 20px;
 }
 
 .contact-section p {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
     margin-bottom: 30px;
     max-width: 700px;
@@ -632,7 +633,7 @@ export default {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .form-row textarea {
@@ -641,11 +642,11 @@ export default {
 }
 
 .submit-button {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     border: none;
     padding: 12px 30px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;

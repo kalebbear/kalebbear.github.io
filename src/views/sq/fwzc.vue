@@ -85,7 +85,7 @@
                             </div>
                         </div>
 
-                        <h3 style="margin-top: 40px; color: #1e50a2;">收费政策</h3>
+                        <h3 style="margin-top: 40px; color: #007dc6;">收费政策</h3>
                         <p>华赛的服务收费基于项目复杂度、组织规模、服务内容和持续时间等因素综合确定，我们承诺：</p>
                         <ul class="policy-list">
                             <li><strong>透明定价：</strong>所有服务项目均提供详细报价单，明确各项费用组成</li>
@@ -190,7 +190,7 @@ export default {
 }
 
 .policy-header {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -218,7 +218,7 @@ export default {
 
 .section-title {
     font-size: 28px;
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 15px;
@@ -231,7 +231,7 @@ export default {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #e60012;
+    background-color: #007dc6;
 }
 
 .policy-grid {
@@ -245,10 +245,11 @@ export default {
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
 }
 
 .policy-card h3 {
-    color: #1e50a2;
+    color: #007dc6;
     font-size: 22px;
     margin-bottom: 15px;
 }
@@ -268,7 +269,7 @@ export default {
 }
 
 .policy-quote {
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -315,7 +316,7 @@ export default {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     display: flex;
     align-items: center;
@@ -328,7 +329,7 @@ export default {
 .step h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #1e50a2;
+    color: #007dc6;
 }
 
 .step p {
@@ -344,13 +345,13 @@ export default {
 
 .policy-footer h2 {
     font-size: 28px;
-    color: #1e50a2;
+    color: #007dc6;
     margin-bottom: 30px;
 }
 
 .contact-button {
     display: inline-block;
-    background-color: #1e50a2;
+    background-color: #007dc6;
     color: white;
     padding: 15px 30px;
     font-size: 18px;

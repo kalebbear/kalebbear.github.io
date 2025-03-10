@@ -73,8 +73,8 @@
                 <img :src="imageUrl" alt="" width="50px" height="50px" style="visibility: hidden;">
                 <div class="" style="text-align:center;width:260px;">
                     <!-- <img :src="require('@/assets/images/xq.png')" class="" width="80" height="80"> -->
-                    <div class="stepHeader" style="color:007DC6;font-size:20px;line-height:100px;text-align:center;cursor:pointer;" @click="()=>{$router.push('/pglc')}">流程详情
-                        <img :src="require('@/assets/images/search.png')" width="20" style="margin:2px 0 0 0">
+                    <div class="stepHeader" style="color:007DC6;font-size:16px;line-height:100px;text-align:center;cursor:pointer;" @click="()=>{$router.push('/pglc')}">流程详情
+                        <img :src="require('@/assets/images/search.png')" width="16" style="margin:2px 0 0 0">
                     </div>
 
                 </div>
@@ -124,7 +124,8 @@ export default {
     overflow: hidden;
 }
 .steps_header {
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
     padding: 40px;
 }

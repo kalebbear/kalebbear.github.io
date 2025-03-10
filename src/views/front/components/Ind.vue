@@ -148,7 +148,7 @@ export default {
         width: 700px;
         color: #fff;
         .big_font {
-            font-size: 50px;
+            font-size: 38px;
         }
         .small_font {
             margin-top: 20px;
@@ -162,10 +162,11 @@ export default {
         }
     }
     .ind_header {
-        font-size: 40px;
+        font-size: 30px;
+        font-weight: bold;
     }
     .ind_header2 {
-        font-size: 20px;
+        font-size: 16px;
         color: #666;
         margin: 10px 0 20px;
     }
@@ -175,6 +176,7 @@ export default {
     .hy_box {
         display: flex;
         margin-bottom: 10px;
+        font-size: 14px;
         .hy_item {
             margin-right: 40px;
             text-align: center;

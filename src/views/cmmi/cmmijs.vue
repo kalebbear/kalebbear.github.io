@@ -12,9 +12,13 @@
             <div class="cont">
                 <p class="pg1">一、CMMI的来源</span></p>
                 <p class="pg1">CMMI（Capability Maturity Model Integration）即能力成熟度模型集成，其前身为CMM，原本是当年美国军方为了评估自己的软件产品供应商的过程质量水平，而委托美国卡内基梅隆大学软件工程学院（SEI）开发的一套过程评估体系，后来又被推广到全世界，成为全球软件企业重要的过程改进方法之一，后因其衍生品的派系林立（如：SW-CMM、SE-CMM、IPT-CMM等等），SEI决定在SW-CMM、SE-CMM的基础上，加入委外采购、IPPD等相关内容，并融合ISO9000部分理念，形成了今天我们看到的CMMI，这也就是CMMI中的“I”的由来。</span></p>
-                <p class="pg1">目前CMMI最新版本为2011年发布的V1.3版本。</span></p>
-                <p style="margin-top: 1em; margin-bottom: 1em; padding: 0px; text-indent: 24px; line-height: 23px; color: rgb(51, 51, 51); font-family: 宋体, &#39;Arial Narrow&#39;; font-size: 12px; white-space: normal; unicode-bidi: embed;"><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);">　　</span><a class="image" title="CMMI模型" style="margin: 0px; padding: 0px; color: rgb(0, 0, 0);" href="http://"><img alt="CMMI模型" width="385" height="290" longdesc="@/assets/images/pas2.jpg" src="@/assets/images/pas2.jpg" style="margin: 0px; padding: 0px; border: 0px solid rgb(51, 51, 51);" /></a></p>
-                <p class="pg1">二、什么是CMMI？</span></p>
+                <p class="pg1">目前CMMI最新版本为2021年发布的V3.0版本。</span></p>
+                <!-- <img alt="CMMI模型" width="700" height="" longdesc="@/assets/images/pas2.jpg" src="@/assets/images/pas2.jpg" /> -->
+
+                <div class="pg1">CMMI发展历史:</div>
+
+                <img src="@/assets/images/cmmils.png" alt="" width="1200">
+                <p class="pg1">二、什么是CMMI？</p>
                 <p class="pg1">CMMI是一个评估模型，它将研发机构的研发能力划分为5个级别。</span></p>
                 <p class="pg1">CMMI也是一个过程改进模型，它指导企业逐步进行过程改进。</span></p>
                 <p class="pg1">CMMI是业界先进的管理方法，它是SEI对数千个项目进行调查总结后得出的最佳实践的集合。</span></p>

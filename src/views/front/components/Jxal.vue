@@ -27,8 +27,6 @@
                     </div>
                 </div>
 
-                
-
             </el-carousel-item>
 
         </el-carousel>
@@ -120,7 +118,7 @@ export default {
         padding: 50px 72px 80px;
 
         h3 {
-            font-size: 30px;
+            font-size: 20px;
             margin: 0 0 20px;
         }
         div {
@@ -136,7 +134,7 @@ export default {
     padding: 40px 0;
     .hheader {
         h3 {
-            font-size: 38px;
+            font-size: 30px;
         }
         .dec_box {
             color: #666;
@@ -159,7 +157,7 @@ export default {
         width: 700px;
         color: #fff;
         .big_font {
-            font-size: 36px;
+            font-size: 20px;
         }
         .read_more {
             position: absolute;
