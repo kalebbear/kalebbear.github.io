@@ -12,7 +12,7 @@ const menuList = [
     },
     {
         name: '关于华赛',
-        pic: '/images/wbq/p5.webp',
+        pic: '/images/wbq/p8.webp',
         path: '',
         subMenu: [
             {
@@ -44,7 +44,7 @@ const menuList = [
     {
         name: '华赛业务',
         path: '',
-        pic: '/images/wbq/p6.webp',
+        pic: '/images/wbq/lj3.jpeg',
         subMenu: [
             {
                 name: '咨询服务',
@@ -63,7 +63,7 @@ const menuList = [
     {
         name: '华赛研究',
         path: '',
-        pic: '/images/wbq/p9.jpg',
+        pic: '/images/wbq/sq1.webp',
         subMenu: [
             {
                 name: '华赛工具',
@@ -81,7 +81,7 @@ const menuList = [
     },
     {
         name: '社区建设',
-        pic: '/images/wbq/p1.webp',
+        pic: '/images/wbq/lj1.jpeg',
         path: '',
         subMenu: [
             {

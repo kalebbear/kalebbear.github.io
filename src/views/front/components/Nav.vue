@@ -38,8 +38,8 @@
                             </div>
 
                         </div>
-                        <div style="width:50%;margin-left:40px;background:#eee;padding:40px;">
-                            <img :src="require(`@/assets${pic}`)" alt="" width="400" height="200" style="margin:60px">
+                        <div style="width:50%;margin-left:40px;background:#eee;padding:10px 40px;">
+                            <img :src="require(`@/assets${pic}`)" alt="" width="400" height="" style="margin:60px">
                         </div>
                     </div>
                 </transition>
@@ -47,8 +47,8 @@
             <template v-if="mm.name === '社区建设'||mm.name === '华赛研究'">
                 <transition name="fade">
                     <div class="subBox" v-show="mm.showSub&&subMenuData.name===mm.name">
-                        <div style="width:50%;text-align:right;background:#eee;padding:40px;">
-                            <img :src="require(`@/assets${pic}`)" alt="" width="400" height="200" style="margin:60px">
+                        <div style="width:50%;text-align:right;background:#eee;padding:10px 40px;">
+                            <img :src="require(`@/assets${pic}`)" alt="" width="400" height="" style="margin:60px">
                         </div>
                         <div style="width:50%;text-align:left;margin:40px;display: flex;justify-content: flex-start;align-self: center;">
                             <div style="">
