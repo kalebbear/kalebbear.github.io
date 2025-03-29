@@ -13,7 +13,7 @@
 
                 <header class="page-header">
                     <div class="container">
-                        <p>华赛致力于在CMMI与ASPICE社区中创建积极的交流与学习环境，通过各种活动促进行业发展，提升组织过程能力。</p>
+                        <p>华赛致力于在研发管理社区中创建积极的交流与学习环境，通过各种活动促进行业发展，提升组织过程能力。</p>
                     </div>
                 </header>
 
@@ -111,7 +111,7 @@
                             <div class="contribution-icon">📚</div>
                             <div class="contribution-content">
                                 <h3>知识分享</h3>
-                                <p>通过技术分享会、白皮书发布和案例研究，我们持续向社区贡献CMMI与ASPICE领域的专业知识，促进行业共同发展。</p>
+                                <p>通过技术分享会、白皮书发布和案例研究，我们持续向社区贡献研发管理领域的专业知识，促进行业共同发展。</p>
                             </div>
                         </div>
 
@@ -135,7 +135,7 @@
                             <div class="contribution-icon">🎓</div>
                             <div class="contribution-content">
                                 <h3>人才培养</h3>
-                                <p>通过实习项目、校企合作和专业培训，我们致力于培养更多CMMI与ASPICE领域的专业人才，满足行业发展需求。</p>
+                                <p>通过实习项目、校企合作和专业培训，我们致力于培养更多研发管理领域的专业人才，满足行业发展需求。</p>
                             </div>
                         </div>
                     </div>

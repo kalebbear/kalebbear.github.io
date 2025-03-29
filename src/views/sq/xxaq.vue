@@ -12,7 +12,7 @@
             <div>
                 <header class="security-header">
                     <div class="main-container">
-                        <p>华赛致力于在CMMI与ASPICE咨询服务中保护客户敏感信息，实施全面的信息安全管理体系，确保信息资产的机密性、完整性和可用性。</p>
+                        <p>华赛致力于在研发管理咨询服务中保护客户敏感信息，实施全面的信息安全管理体系，确保信息资产的机密性、完整性和可用性。</p>
                     </div>
                 </header>
 

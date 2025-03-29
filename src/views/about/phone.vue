@@ -12,7 +12,7 @@
 
             <el-row :gutter="20">
                 <el-col :span="12">
-                    <el-card>
+                    <el-card v-if="$store.state.type!=='aspice'">
                         <div class="phone_box">
                             <div class="adr">CMMI咨询</div>
                             <div>谢先生(深圳)</div>
@@ -24,7 +24,7 @@
 
                 </el-col>
                 <el-col :span="12">
-                    <el-card>
+                    <el-card v-if="$store.state.type==='aspice'">
                         <div class="phone_box">
                             <div class="adr">ASPICE咨询</div>
                             <div>吴先生(深圳)</div>
@@ -39,7 +39,7 @@
             </el-row>
             <el-row :gutter="20" style="margin-top:20px">
                 <el-col :span="12">
-                    <el-card>
+                    <el-card v-if="$store.state.type!=='aspice'">
                         <div class="phone_box">
                             <div class="adr">CMMI咨询</div>
                             <div>常先生（北京）</div>

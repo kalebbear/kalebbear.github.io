@@ -13,7 +13,7 @@
                 <header class="integrity-header">
                     <div class="page-container">
                         <!-- <h1>廉洁声明</h1> -->
-                        <p>华赛承诺在CMMI与ASPICE咨询与评估过程中，恪守商业道德，坚持公正公平原则，杜绝一切不正当行为，为客户提供真实、可靠、透明的专业服务。</p>
+                        <p>华赛承诺在研发管理咨询与评估过程中，恪守商业道德，坚持公正公平原则，杜绝一切不正当行为，为客户提供真实、可靠、透明的专业服务。</p>
                     </div>
                 </header>
 
@@ -24,12 +24,12 @@
                             <img src="@/assets/images/wbq/lj1.jpeg" alt="廉洁诚信" width="800" height="400">
                         </div>
                         <div class="section-content">
-                            <p>作为专业的CMMI实施评估与ASPICE咨询认证服务提供商，华赛深知廉洁对专业服务机构的重要性。我们承诺在所有业务活动中恪守诚信原则，坚持以下廉洁标准：</p>
+                            <p>作为专业的{{ $store.state.type==='aspice'?'ASPICE咨询认证':'CMMI实施评估'}}服务提供商，华赛深知廉洁对专业服务机构的重要性。我们承诺在所有业务活动中恪守诚信原则，坚持以下廉洁标准：</p>
 
                             <div class="integrity-principles">
                                 <div class="principle-card">
                                     <h3><span>1</span>公正评估</h3>
-                                    <p>在CMMI与ASPICE评估过程中，华赛团队坚持客观公正原则，严格按照模型要求和评估方法开展工作，不因任何商业利益而影响评估结果的真实性。</p>
+                                    <p>在评估过程中，华赛团队坚持客观公正原则，严格按照模型要求和评估方法开展工作，不因任何商业利益而影响评估结果的真实性。</p>
                                 </div>
 
                                 <div class="principle-card">

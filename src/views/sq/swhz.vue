@@ -13,7 +13,7 @@
                 <header class="cooperation-header">
                     <div class="main-container">
                         <!-- <h1>商务合作</h1> -->
-                        <p>华赛诚邀各界合作伙伴共同构建CMMI与ASPICE领域的专业生态圈，通过资源共享、优势互补，为客户创造更大价值。</p>
+                        <p>华赛诚邀各界合作伙伴共同构建研发管理领域的专业生态圈，通过资源共享、优势互补，为客户创造更大价值。</p>
                     </div>
                 </header>
 
@@ -46,7 +46,7 @@
                                     <img src="@/assets/images/icon/i2.png" alt="高校图标" width="40" height="40">
                                 </div>
                                 <h3>高校合作</h3>
-                                <p>与高等院校合作，开展CMMI与ASPICE研究项目，为学生提供实习机会，培养过程改进领域的专业人才。</p>
+                                <p>与高等院校合作，开展v研究项目，为学生提供实习机会，培养过程改进领域的专业人才。</p>
                                 <a href="#">了解合作方式 &rarr;</a>
                             </div>
 
@@ -89,11 +89,11 @@
                             </div>
                             <div class="benefits-content">
                                 <ul class="benefits-list">
-                                    <li><strong>专业背书：</strong>华赛作为CMMI与ASPICE领域的专业机构，将为合作伙伴提供权威背书，增强市场信任度。</li>
+                                    <li><strong>专业背书：</strong>华赛作为研发管理领域的专业机构，将为合作伙伴提供权威背书，增强市场信任度。</li>
                                     <li><strong>客户资源：</strong>共享优质客户资源，通过互相推荐拓展业务机会，实现合作共赢。</li>
-                                    <li><strong>知识共享：</strong>获取CMMI与ASPICE领域的最新研究成果、实施经验和行业动态。</li>
+                                    <li><strong>知识共享：</strong>获取研发管理领域的最新研究成果、实施经验和行业动态。</li>
                                     <li><strong>联合营销：</strong>共同举办行业活动，联合发布白皮书，提升品牌影响力。</li>
-                                    <li><strong>技术支持：</strong>获得华赛专家团队在CMMI与ASPICE领域的专业技术支持。</li>
+                                    <li><strong>技术支持：</strong>获得华赛专家团队在研发管理领域的专业技术支持。</li>
                                     <li><strong>优惠政策：</strong>合作伙伴享受华赛服务的优惠价格和定制化支持。</li>
                                 </ul>
                             </div>
