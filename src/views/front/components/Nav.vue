@@ -100,7 +100,7 @@ export default {
         this.navList =
             this.$store.state.type === 'aspice' ? menuLista : menuList
     },
-
+    
     methods: {
         menuLeave() {
             console.log('__@@')

@@ -19,6 +19,14 @@ Vue.prototype.$md5 = md5
 import './permission' // permission control
 
 import piugin from './components/index'  //导入全局组件
+let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+if (
+    /android|iphone|ipad|ipod|blackberry|iemobile|windows phone/i.test(
+        userAgent.toLowerCase()
+    )
+) {
+    window.location = "https://kalebbear.github.io/dist/mobile/"
+}
 Vue.use(piugin)
 
 Vue.use(ElementUI);
