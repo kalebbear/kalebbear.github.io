@@ -12,7 +12,6 @@
             </div>
             <div class="cont newAboutUs">
                 <div class="pg1">
-                    <!-- <img src="@/assets/ab1.png" alt=""> -->
                     深圳华赛信息咨询有限公司（简称：华赛）公司由多位国内外研发管理专家共同组建，他们分别来自于美国、欧洲、印度和中国，是国际知名的研发管理改善的先行者。华赛的咨询团队为国内外上千家企业提供过研发管理培训和咨询服务，也是国内最早一批专业从事研发管理改善咨询与培训业务的团队。
                 </div>
                 <div class="pg1">
@@ -51,7 +50,7 @@ export default {
     },
     mounted() {
         // this.webtype = localStorage.type
-        console.log('asd', this.$store.state.type)
+        // console.log('asd', this.$store.state.type)
     },
     methods: {},
 }

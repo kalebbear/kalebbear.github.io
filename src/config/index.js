@@ -5,14 +5,17 @@ const menuList = [
     {
         name: 'CMMI实施',
         path: '/home',
+        subPath: [],
     },
     {
         name: 'CMMI评估认证',
         path: '/cmmi',
+        subPath: [],
     },
     {
         name: '关于华赛',
         pic: '/images/wbq/p8.webp',
+        subPath: ['/aboutHS', '/team', '/honor', '/hy', '/khpj', '/al'],
         path: '',
         subMenu: [
             {
@@ -45,6 +48,7 @@ const menuList = [
         name: '华赛业务',
         path: '',
         pic: '/images/wbq/lj3.jpeg',
+        subPath: ['/consultingService', '/training', '/rzservice'],
         subMenu: [
             {
                 name: '咨询服务',
@@ -64,6 +68,7 @@ const menuList = [
         name: '华赛研究',
         path: '',
         pic: '/images/wbq/sq1.webp',
+        subPath: ['/hstools', '/hsdocs', '/hsdatas'],
         subMenu: [
             {
                 name: '华赛工具',
@@ -82,6 +87,7 @@ const menuList = [
     {
         name: '社区建设',
         pic: '/images/wbq/lj1.jpeg',
+        subPath: ['/sqhd', '/swhz', '/ljsm', '/xxaq', '/fwzc'],
         path: '',
         subMenu: [
             {
@@ -108,7 +114,8 @@ const menuList = [
     },
     {
         name: '联系我们',
-        path: 'phone',
+        subPath: [],
+        path: '/phone',
     },
 ]
 const menuLista = [
@@ -116,10 +123,12 @@ const menuLista = [
     {
         name: 'ASPICE',
         path: '/aspice',
+        subPath: [],
     },
     {
         name: '关于华赛',
         pic: '/images/wbq/p5.webp',
+        subPath: ['/aboutHS', '/team', '/honor', '/hy', '/khpj', '/al'],
         path: '',
         subMenu: [
             {
@@ -149,6 +158,7 @@ const menuLista = [
         name: '华赛业务',
         path: '',
         pic: '/images/wbq/p6.webp',
+        subPath: ['/consultingService', '/training', '/aspiceService'],
         subMenu: [
             {
                 name: '咨询服务',
@@ -168,6 +178,7 @@ const menuLista = [
         name: '华赛研究',
         path: '',
         pic: '/images/wbq/p9.jpg',
+        subPath: ['/hstools', '/hsdocs', '/hsdatas'],
         subMenu: [
             {
                 name: '华赛工具',
@@ -186,6 +197,7 @@ const menuLista = [
     {
         name: '社区建设',
         pic: '/images/wbq/p1.webp',
+        subPath: ['/sqhd', '/swhz', '/ljsm', '/xxaq', '/fwzc'],
         path: '',
         subMenu: [
             {
@@ -212,7 +224,8 @@ const menuLista = [
     },
     {
         name: '联系我们',
-        path: 'phone',
+        subPath: [],
+        path: '/phone',
     },
 ]
 const footList = [

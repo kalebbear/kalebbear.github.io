@@ -20,12 +20,18 @@ import './permission' // permission control
 
 import piugin from './components/index'  //导入全局组件
 let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
 if (
     /android|iphone|ipad|ipod|blackberry|iemobile|windows phone/i.test(
         userAgent.toLowerCase()
     )
 ) {
-    window.location = "https://kalebbear.github.io/dist/mobile/"
+    if (location.href.includes('aspice') || store.state.type === 'aspice') {
+        window.location = "http://www.huasaiinfo.com/mobile/#/aspice"
+    } else {
+        window.location = "http://www.huasaiinfo.com//mobile/"
+    }
+
 }
 Vue.use(piugin)
 

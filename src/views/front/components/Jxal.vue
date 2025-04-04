@@ -80,7 +80,7 @@ export default {
 
     mounted() {
         if (this.blist && this.blist.length) {
-            console.log('hasblist')
+            // console.log('hasblist')
             this.swiperList = [...this.blist]
         }
         window.addEventListener('resize', this.setCarouselHeight)
@@ -97,7 +97,6 @@ export default {
         },
         handleImageError(event) {
             console.error('图片加载失败:', event.target.src)
-            // event.target.src = require('@/assets/banner/default.jpg') // 替换为默认图片路径
         },
         setCarouselHeight() {
             if (window.innerWidth <= 768) {

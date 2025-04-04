@@ -18,7 +18,7 @@ const store = new Vuex.Store({
     },
     actions: {
         setType ({ commit }) {
-            console.log('_disp')
+            // console.log('_disp')
             commit('SET_TYPE', localStorage.type)
         },
     }

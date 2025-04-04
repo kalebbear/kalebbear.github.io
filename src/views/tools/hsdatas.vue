@@ -79,7 +79,7 @@ export default {
         }
     },
     mounted() {
-        console.log(this.wkjson)
+        // console.log(this.wkjson)
     },
     methods: {},
 }

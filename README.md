@@ -28,3 +28,10 @@ npm install
 ```
 npm run serve
 ```
+## 注意事项
+
+文件夹 aspice为重定向页面，不要修改
+
+文件夹 mobile 为手机端代码
+
+.htaccess 为域名映射配置。不要修改

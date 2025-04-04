@@ -99,7 +99,7 @@ export default {
     },
 
     mounted() {
-        console.log('Component mounted') // 确认组件挂载
+        // console.log('Component mounted') // 确认组件挂载
 
         window.addEventListener('resize', this.setCarouselHeight)
     },
@@ -119,7 +119,6 @@ export default {
         },
         handleImageError(event) {
             console.error('图片加载失败:', event.target.src)
-            // event.target.src = require('@/assets/banner/default.jpg') // 替换为默认图片路径
         },
         setCarouselHeight() {
             if (window.innerWidth <= 768) {

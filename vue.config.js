@@ -16,6 +16,7 @@ module.exports = {
             },
         },
     },
+    productionSourceMap: false,
     css: {
         loaderOptions: {
 
@@ -52,12 +53,45 @@ module.exports = {
 
         },
     },
+
     chainWebpack: config => {
         config.plugin('html')
             .tap(args => {
                 args[0].title = '华赛';
                 return args;
+            });
+        config.module
+
+            .rule("images")
+
+            .use("image-webpack-loader")
+
+            .loader("image-webpack-loader")
+
+            .options({
+
+                mozjpeg: {
+                    quality: 50
+                },
+                // optipng.enabled: false will disable optipng
+                optipng: {
+                    enabled: false,
+                },
+                pngquant: {
+                    quality: [0.65, 0.90],
+                    speed: 4
+                },
+                gifsicle: {
+                    interlaced: false,
+                },
+                // the webp option will enable WEBP
+                webp: {
+                    quality: 50
+                }
+
             })
+
+            .end();
     }
 }
 // module.exports = {

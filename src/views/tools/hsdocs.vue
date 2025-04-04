@@ -66,7 +66,9 @@ export default {
         }
         var validatePass2 = (rule, value, callback) => {
             callback(
-                new Error('密码错误。注意：文库系统暂时只对公司内部评估师开放。')
+                new Error(
+                    '密码错误。注意：文库系统暂时只对公司内部评估师开放。'
+                )
             )
         }
         return {
@@ -84,7 +86,7 @@ export default {
         }
     },
     mounted() {
-        console.log(this.wkjson)
+        // console.log(this.wkjson)
     },
     methods: {
         submitForm(formName) {
@@ -92,7 +94,7 @@ export default {
                 if (valid) {
                     alert('submit!')
                 } else {
-                    console.log('error submit!!')
+                    // console.log('error submit!!')
                     return false
                 }
             })
@@ -100,13 +102,13 @@ export default {
 
         search() {
             if (this.searchTxt) {
-                console.log(this.searchTxt)
+                // console.log(this.searchTxt)
                 this.wkjson = wkjson.filter((e) => {
                     return e.title.includes(this.searchTxt)
                     // e.html.includes(this.searchTxt)
                 })
 
-                console.log(this.wkjson)
+                // console.log(this.wkjson)
             } else {
                 this.wkjson = wkjson
             }

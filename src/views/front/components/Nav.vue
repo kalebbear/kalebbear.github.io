@@ -11,7 +11,7 @@
 
             </div>
             <div class="nav-items">
-                <div v-for="(item, i) in navList" :key="i" @click="toDetail(item, i)" :class="['nav-item', { 'active': $route.path === item.path }]" @mouseover="menuChange(item)" @mouseleave="menuLeave(item)">
+                <div v-for="(item, i) in navList" :key="i" @click="toDetail(item, i)" :class="['nav-item', { 'active': $route.path === item.path ||  item.subPath.includes($route.path)}]" @mouseover="menuChange(item)" @mouseleave="menuLeave(item)">
                     <span>{{ item.name }}</span>
                 </div>
             </div>
@@ -100,14 +100,14 @@ export default {
         this.navList =
             this.$store.state.type === 'aspice' ? menuLista : menuList
     },
-    
+
     methods: {
         menuLeave() {
-            console.log('__@@')
+            // console.log('__@@')
             // this.showSub = false
         },
         menuChange(item) {
-            console.log('__')
+            // console.log('__')
             // this.showSub = false
             this.subMenuData = item
             // setTimeout(() => {
@@ -234,9 +234,8 @@ export default {
             white-space: nowrap;
             transition: color 0.3s;
 
-            &:hover,
-            &.active {
-                color: #4c88ff;
+            &:hover {
+                color: #007dc6;
             }
         }
 
@@ -294,9 +293,18 @@ export default {
     }
 
     .active {
-        color: rgb(0, 125, 198);
+        color: #007dc6;
     }
-
+    @media (max-width: 1600px) {
+        .nav-item {
+            padding: 0 20px !important;
+        }
+    }
+    @media (max-width: 1420px) {
+        .nav-item {
+            padding: 0 10px !important;
+        }
+    }
     @media (max-width: 768px) {
         .container {
             width: 95%;

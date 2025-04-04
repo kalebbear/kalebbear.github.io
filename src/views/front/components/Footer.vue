@@ -16,7 +16,7 @@
                 <div>咨询热线：0755-29656825
                 </div>
                 <div>
-                    法律声明 &nbsp;&nbsp;&nbsp; 知识产权 &nbsp;&nbsp;&nbsp; ©2010-2022 &nbsp;&nbsp; 深圳华赛版权所有 <a class="item" :href="'https://beian.mps.gov.cn/#/query/webSearch'" target="_blank">粤ICP备 10030527 号</a><img class="img" src="@/assets/beian.png" alt="" style="width: 20px; height: 20px">
+                    法律声明 &nbsp;&nbsp;&nbsp; 知识产权 &nbsp;&nbsp;&nbsp; ©2010-2025 &nbsp;&nbsp; 深圳华赛版权所有 <a class="item" :href="'https://beian.mps.gov.cn/#/query/webSearch'" target="_blank">粤ICP备 10030527 号</a><img class="img" src="@/assets/beian.png" alt="" style="width: 20px; height: 20px">
                 </div>
             </div>
         </div>
