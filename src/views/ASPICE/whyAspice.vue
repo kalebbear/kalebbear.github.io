@@ -1,7 +1,7 @@
 <template>
     <div class="brands-container">
         <Nav />
-        <div class="sp"></div>
+        <Banner />
         <Bred :mdata="[
             {name:'首页',path:'/aspice'},
             {name:'为什么要进行ASPICE认证',path:''}]" />

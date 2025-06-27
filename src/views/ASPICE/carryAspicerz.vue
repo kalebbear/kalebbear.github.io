@@ -1,7 +1,7 @@
 <template>
     <div class="brands-container">
         <Nav />
-        <div class="sp"></div>
+        <Banner />
         <Bred :mdata="[
             {name:'首页',path:'/aspice'},
             {name:'ASPICE认证流程',path:''}]" />
@@ -42,7 +42,7 @@
                 <p class="pg1">CA与PA将文档证据和访谈证据与ASPICE要求建立映射关系，整理文件检查和访谈中发现的强项、弱项和改进建议。</p>
                 <p class="pg1">2.5.活动打分</p>
                 <p class="pg1">评估团队根据ASPICE打分规则，结合已经前面整理出来的强项、弱项和改进建议对ASPICE各活动进行评价打分。</p>
-                
+
             </div>
         </div>
 

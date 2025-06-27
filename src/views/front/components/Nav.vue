@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="tel_box">
-                <div>
+                <div v-if="$store.state.type!=='aspice'">
                     <label>咨询热线：</label>
                     <div class="tel">0755-29656825</div>
                 </div>
@@ -150,9 +150,14 @@ export default {
             })
         },
         toDetail(item, i) {
+            console.log(item)
             if (item.path) {
                 this.$router.push({
                     path: item.path,
+                })
+            } else {
+                this.$router.push({
+                    path: item.subPath[0],
                 })
             }
         },

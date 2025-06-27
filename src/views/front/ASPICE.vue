@@ -15,7 +15,7 @@
         <!-- </div> -->
 
         <div class="sp">
-            <!-- <el-image src="@/assets/images/wbq/qc.png" alt="" style="width:100%;height:100%" fit="cover" @error="handleImageError" /> -->
+            <el-image :src="imageUrl" alt="" style="width:100%;height:100%" fit="cover" />
             <div class="wp1360 banner_wrap">
                 <div class="banner_info">
                     <p class="en_font">Automotive Software Process Improvement and Capacity dEtermination</p>
@@ -212,6 +212,7 @@ export default {
     watch: {},
     data() {
         return {
+            imageUrl: require('@/assets/images/wbq/qc.png'),
             homeTitle: '',
             homeDescription: '',
             hotlineVisible: false, // 服务支持弹窗
@@ -235,8 +236,8 @@ export default {
 .sp {
     width: 100%;
     height: 500px;
-    background-image: url(../../assets/images/wbq/qcff.jpg);
     background-size: 100% 100%;
+    position: relative;
 }
 .ljbox {
     margin-bottom: 40px;
@@ -312,10 +313,13 @@ export default {
     }
 }
 .banner_wrap {
-    position: relative;
+    position: absolute;
     color: #fff;
     height: 480px;
     width: 1360px;
+    left: 50%;
+    top: 0;
+    margin-left: -680px;
     .banner_info {
         position: absolute;
         padding: 20px;
@@ -333,6 +337,14 @@ export default {
         }
         .read_more {
             position: absolute;
+            background: #fff;
+            color: #000;
+            opacity: 0.8;
+            height: 40px;
+            line-height: 40px;
+            width: 200px;
+            text-align: center;
+            border-radius: 20px;
             bottom: 30px;
             right: 20px;
             cursor: pointer;

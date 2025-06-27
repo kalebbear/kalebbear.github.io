@@ -1,7 +1,7 @@
 <template>
     <div class="brands-container">
         <Nav />
-        <div class="sp"></div>
+        <Banner />
         <Bred :mdata="[
             {name:'首页',path:'/aspice'},
             {name:'什么是ASPICE',path:''}]" />
@@ -13,8 +13,8 @@
                 <div class="xbox">
                     <img src="@/assets/images/aspice/1.png" width="100">
                     <div class="xbox-right">
-                        <p class="pg1"> ASPICE全称是“Automotive Software Process Improvement and Capacity dEtermination”，汽车软件过程改进及能力评定，是汽车行业用于评价软件开发团队的研发能力水平的模型框架。最初由欧洲20多家主要汽车制造商共同制定，于2005年发布，目的是为了指导汽车零部件研发厂商的软件开发流程，从而改善车载软件的质量。
-                        <p>
+                        <p class="pg1"> ASPICE全称是“Automotive Software Process Improvement and Capacity dEtermination”，汽车软件过程改进及能力评定，是汽车行业用于评价软件开发团队的研发能力水平的模型框架。最初由欧洲20多家主要汽车制造商共同制定，于2005年发布，目的是为了指导汽车零部件研发厂商的软件开发流程，从而改善车载软件的质量。</p>
+
                         <p class="pg1">多年以来，ASPICE在欧洲汽车行业内被广泛用于研发流程改善及供应商的研发能力评价。</p>
                     </div>
                 </div>
