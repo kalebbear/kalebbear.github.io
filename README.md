@@ -30,6 +30,9 @@ npm run serve
 ```
 ## 注意事项
 
+
+moblie目录放打包后的手机端代码
+
 文件夹 aspice为重定向页面，不要修改
 
 文件夹 mobile 为手机端代码

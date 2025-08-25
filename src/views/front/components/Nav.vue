@@ -15,7 +15,14 @@
                     <span>{{ item.name }}</span>
                 </div>
             </div>
-            <div class="tel_box">
+            <div class="tel_box" v-if="checkLan() === 't'">
+
+                <div>
+                    <label>咨询热线：</label>
+                    <div class="tel">64334372</div>
+                </div>
+            </div>
+            <div class="tel_box" v-else>
                 <div v-if="$store.state.type!=='aspice'">
                     <label>咨询热线：</label>
                     <div class="tel">0755-29656825</div>
@@ -33,7 +40,7 @@
                         <div style="width:50%;text-align:right;margin:40px;display: flex;justify-content: flex-end;align-self: center;">
                             <div style="">
                                 <div v-for="subItme in subList" class="subItem" @click="routeto(subItme.path)">
-                                    {{subItme.name}}
+                                    {{checkLan() === 's' ? t2s(subItme.name) : s2t(subItme.name)}}
                                 </div>
                             </div>
 
@@ -53,7 +60,7 @@
                         <div style="width:50%;text-align:left;margin:40px;display: flex;justify-content: flex-start;align-self: center;">
                             <div style="">
                                 <div v-for="subItme in subList" class="subItem" @click="routeto(subItme.path)">
-                                    {{subItme.name}}
+                                    {{checkLan() === 's' ? t2s(subItme.name) : s2t(subItme.name)}}
                                 </div>
                             </div>
 
@@ -69,12 +76,15 @@
 <script>
 import { mapGetters } from 'vuex'
 import { menuList, menuLista } from '@/config/index'
+import { s2t, t2s } from 'chinese-s2t'
+import { checkLan } from '@/utils/index.js'
 export default {
     name: 'Nav',
     data() {
         return {
             navList: [],
             pic: '/images/banner1.jpg',
+            navigator: window.navigator,
             showSub: false,
             subMenuData: {},
             subList: [{}],
@@ -102,6 +112,9 @@ export default {
     },
 
     methods: {
+        checkLan,
+        s2t,
+        t2s,
         menuLeave() {
             // console.log('__@@')
             // this.showSub = false

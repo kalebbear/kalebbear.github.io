@@ -9,47 +9,67 @@
             <div class="hsHeader">
                 <!-- <h3>暂无页面</h3> -->
             </div>
+            <template v-if="checkLan() === 't'">
+                <el-row :gutter="20">
+                    <el-col :span="12">
+                        <el-card>
+                            <div class="phone_box">
+                                <div class="adr">联系方式</div>
+                                <div>吴先生</div>
+                                <div>电话：64334372</div>
+                                <div>邮箱：cmmi@huasaiinfo.com</div>
+                                <!-- <div>地址：深圳市宝安区新安街道兴东社区留仙大道2号汇聚创新园2栋2403室</div> -->
+                            </div>
+                        </el-card>
 
-            <el-row :gutter="20">
-                <el-col :span="12">
-                    <el-card v-if="$store.state.type!=='aspice'">
-                        <div class="phone_box">
-                            <div class="adr">CMMI咨询</div>
-                            <div>谢先生(深圳)</div>
-                            <div>电话：14737222742</div>
-                            <div>邮箱：changbo@huasaiinfo.com</div>
-                            <!-- <div>地址：深圳市宝安区新安街道兴东社区留仙大道2号汇聚创新园2栋2403室</div> -->
-                        </div>
-                    </el-card>
+                    </el-col>
 
-                </el-col>
-                <el-col :span="12">
-                    <el-card v-if="$store.state.type==='aspice'">
-                        <div class="phone_box">
-                            <div class="adr">ASPICE咨询</div>
-                            <div>吴先生(深圳)</div>
-                            <div>电话：18924597488</div>
-                            <div>邮箱：tony@huasaiinfo.com</div>
-                            <!-- <div>地址：深圳市宝安区新安街道兴东社区留仙大道2号汇聚创新园2栋2403室</div> -->
-                        </div>
-                    </el-card>
+                </el-row>
+            </template>
+            <template v-else>
 
-                </el-col>
+                <el-row :gutter="20">
+                    <el-col :span="12">
+                        <el-card v-if="$store.state.type!=='aspice'">
+                            <div class="phone_box">
+                                <div class="adr">CMMI咨询</div>
+                                <div>谢先生(深圳)</div>
+                                <div>电话：14737222742</div>
+                                <div>邮箱：changbo@huasaiinfo.com</div>
+                                <!-- <div>地址：深圳市宝安区新安街道兴东社区留仙大道2号汇聚创新园2栋2403室</div> -->
+                            </div>
+                        </el-card>
 
-            </el-row>
-            <el-row :gutter="20" style="margin-top:20px">
-                <el-col :span="12">
-                    <el-card v-if="$store.state.type!=='aspice'">
-                        <div class="phone_box">
-                            <div class="adr">CMMI咨询</div>
-                            <div>常先生（北京）</div>
-                            <div>电话：15724706007</div>
-                            <div>邮箱：chris@huasaiinfo.com</div>
-                            <!-- <div>地址：北京市海淀区东北旺西路8号 中关村软件园3号楼B座 1203</div> -->
-                        </div>
-                    </el-card>
+                    </el-col>
+                    <el-col :span="12">
+                        <el-card v-if="$store.state.type==='aspice'">
+                            <div class="phone_box">
+                                <div class="adr">ASPICE咨询</div>
+                                <div>吴先生(深圳)</div>
+                                <div>电话：18924597488</div>
+                                <div>邮箱：tony@huasaiinfo.com</div>
+                                <!-- <div>地址：深圳市宝安区新安街道兴东社区留仙大道2号汇聚创新园2栋2403室</div> -->
+                            </div>
+                        </el-card>
 
-                </el-col></el-row>
+                    </el-col>
+
+                </el-row>
+                <el-row :gutter="20" style="margin-top:20px">
+                    <el-col :span="12">
+                        <el-card v-if="$store.state.type!=='aspice'">
+                            <div class="phone_box">
+                                <div class="adr">CMMI咨询</div>
+                                <div>常先生（北京）</div>
+                                <div>电话：15724706007</div>
+                                <div>邮箱：chris@huasaiinfo.com</div>
+                                <!-- <div>地址：北京市海淀区东北旺西路8号 中关村软件园3号楼B座 1203</div> -->
+                            </div>
+                        </el-card>
+
+                    </el-col></el-row>
+            </template>
+
             <el-row :gutter="20" style="margin-top:20px">
                 <el-col :span="24">
                     <el-card>
@@ -109,6 +129,7 @@
 </template>
   
   <script>
+import { checkLan } from '@/utils/index.js'
 export default {
     name: 'phone',
     data() {
@@ -133,7 +154,9 @@ export default {
             map.openInfoWindow(infoWindow, point) //开启信息窗口
         })
     },
-    methods: {},
+    methods: {
+        checkLan,
+    },
 }
 </script>
   

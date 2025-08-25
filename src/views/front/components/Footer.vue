@@ -13,7 +13,7 @@
         </div>
         <div class="other">
             <div class="center">
-                <div>咨询热线：0755-29656825
+                <div>咨询热线：{{checkLan() === 't' ? '64334372' : '0755-29656825'}}
                 </div>
                 <div>
                     法律声明 &nbsp;&nbsp;&nbsp; 知识产权 &nbsp;&nbsp;&nbsp; ©2010-2025 &nbsp;&nbsp; 深圳华赛版权所有 <a class="item" :href="'https://beian.mps.gov.cn/#/query/webSearch'" target="_blank">粤ICP备 10030527 号</a><img class="img" src="@/assets/beian.png" alt="" style="width: 20px; height: 20px">
@@ -26,6 +26,7 @@
 <script>
 import { getFooterData } from '@/api/index'
 import { footList } from '@/config/index'
+import { checkLan } from '@/utils/index.js'
 export default {
     name: 'Footer',
 
@@ -57,6 +58,7 @@ export default {
     },
 
     methods: {
+        checkLan,
         // 获取Footer数据
         async fetchFooterData() {
             try {
