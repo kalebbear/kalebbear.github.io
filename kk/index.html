@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kk翻牌</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .draw-animation {
+                animation: draw 3s cubic-bezier(0.17, 0.67, 0.13, 1.03) forwards;
+            }
+            .shake {
+                animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+            }
+            @keyframes draw {
+                0% { transform: scale(0.8) rotate(-5deg); opacity: 0.5; }
+                50% { transform: scale(1.1) rotate(5deg); opacity: 0.8; }
+                100% { transform: scale(1) rotate(0); opacity: 1; }
+            }
+            @keyframes shake {
+                10%, 90% { transform: translateX(-1px); }
+                20%, 80% { transform: translateX(2px); }
+                30%, 50%, 70% { transform: translateX(-3px); }
+                40%, 60% { transform: translateX(3px); }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-light to-blue-50 min-h-screen font-sans text-dark">
+    <!-- 顶部导航 -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-primary flex items-center">
+                <i class="fa fa-random mr-3 text-accent animate-pulse"></i>
+                kk翻牌
+            </h1>
+            <button id="toggleSettings" class="bg-primary/10 hover:bg-primary/20 text-primary font-medium py-2 px-4 rounded-lg transition-all duration-300 flex items-center">
+                <i class="fa fa-list-alt mr-2"></i> 管理内容
+            </button>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- 抽签区域 -->
+        <section id="drawingArea" class="transition-all duration-500">
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-10 mb-10 transform hover:shadow-2xl transition-all duration-300">
+                <h2 class="text-[clamp(1.2rem,2vw,1.6rem)] font-bold mb-8 text-center text-dark/80">
+                    今天吃什么？
+                </h2>
+                
+                <!-- 签展示区域 -->
+                <div id="drawResult" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-12 mb-8 min-h-[200px] flex items-center justify-center border-2 border-primary/10">
+                    <div class="text-center">
+                        <i class="fa fa-hand-o-down text-primary/40 text-3xl mb-4"></i>
+                        <p class="text-gray-400 text-lg md:text-xl">翻牌结果将显示在这里</p>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center">
+                    <button id="drawButton" class="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 hover:-translate-y-1 active:translate-y-0 text-lg flex items-center">
+                        <i class="fa fa-play-circle mr-2"></i> 开始翻牌
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 签列表预览 -->
+            <div class="mb-10">
+                <h3 class="text-xl font-bold mb-4 flex items-center text-dark/80">
+                    <i class="fa fa-tags mr-2 text-secondary"></i> 翻牌内容列表
+                </h3>
+                <div id="drawItemsList" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                    <!-- 签内容列表将通过JS动态生成 -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- 签内容设置区域 (默认隐藏) -->
+        <section id="settingsArea" class="hidden transition-all duration-500">
+            <div class="bg-white rounded-2xl shadow-xl p-6 mb-8">
+                <h2 class="text-xl font-bold mb-6 flex items-center text-dark/80">
+                    <i class="fa fa-pencil-square-o mr-2 text-accent"></i> 管理翻牌内容
+                </h2>
+                
+                <div class="mb-6">
+                    <label for="drawItemContent" class="block text-gray-700 mb-2 font-medium">翻牌内容</label>
+                    <input type="text" id="drawItemContent" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" placeholder="输入签的内容">
+                </div>
+                
+                <div class="flex justify-end mb-6">
+                    <button id="addDrawItem" class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-6 rounded-lg shadow transition-all duration-300 flex items-center">
+                        <i class="fa fa-plus mr-2"></i> 添加到翻牌列表
+                    </button>
+                </div>
+                
+                <div class="border-t pt-4">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-dark/80">已添加的翻牌内容</h3>
+                        <button id="clearAllItems" class="text-red-500 hover:text-red-600 text-sm font-medium flex items-center">
+                            <i class="fa fa-trash mr-1"></i> 清空所有
+                        </button>
+                    </div>
+                    
+                    <div id="adminDrawItemsList" class="space-y-2 max-h-80 overflow-y-auto pr-2 scrollbar-hide">
+                        <!-- 签内容列表将通过JS动态生成 -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button id="backToDraw" class="bg-primary/10 hover:bg-primary/20 text-primary font-medium py-3 px-6 rounded-lg transition-all duration-300">
+                    <i class="fa fa-arrow-left mr-2"></i> 返回翻牌
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark/5 text-dark/60 py-6 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>KK翻牌程序 &copy; 2023</p>
+            <p class="text-sm mt-1">每个牌被翻到的概率完全相同</p>
+        </div>
+    </footer>
+
+    <script>
+        // 签内容数据管理
+        let drawItems = JSON.parse(localStorage.getItem('drawItems')) || [
+            { id: 1, content: '吃屁' },
+            { id: 2, content: '刘记碳烤肉' },
+            { id: 3, content: '久等烤肉' },
+            { id: 4, content: '破局' },
+            { id: 5, content: '西北风' },
+            { id: 6, content: '馒头' }
+        ];
+        
+        // 保存签内容到本地存储
+        function saveDrawItems() {
+            localStorage.setItem('drawItems', JSON.stringify(drawItems));
+        }
+        
+        // 渲染签内容列表（预览用）
+        function renderDrawItemsList() {
+            const listEl = document.getElementById('drawItemsList');
+            listEl.innerHTML = '';
+            
+            if (drawItems.length === 0) {
+                listEl.innerHTML = `
+                    <div class="col-span-full bg-gray-50 rounded-lg p-6 text-center text-gray-500">
+                        <i class="fa fa-info-circle mb-2"></i>
+                        <p>暂无签内容，请先添加</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            drawItems.forEach(item => {
+                const itemEl = document.createElement('div');
+                itemEl.className = 'bg-white rounded-lg p-3 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-center border border-gray-100';
+                itemEl.innerHTML = `
+                    <span class="text-sm md:text-base font-medium">${item.content}</span>
+                `;
+                listEl.appendChild(itemEl);
+            });
+        }
+        
+        // 渲染管理员签内容列表（设置页面用）
+        function renderAdminDrawItemsList() {
+            const adminListEl = document.getElementById('adminDrawItemsList');
+            adminListEl.innerHTML = '';
+            
+            if (drawItems.length === 0) {
+                adminListEl.innerHTML = `
+                    <div class="bg-gray-50 rounded-lg p-4 text-center text-gray-500 text-sm">
+                        暂无翻牌内容
+                    </div>
+                `;
+                return;
+            }
+            
+            drawItems.forEach(item => {
+                const itemEl = document.createElement('div');
+                itemEl.className = 'flex items-center justify-between bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition-all';
+                itemEl.innerHTML = `
+                    <span class="font-medium">${item.content}</span>
+                    <div class="flex gap-2">
+                        <button class="editItem text-primary hover:text-primary/80 p-1" data-id="${item.id}" title="编辑">
+                            <i class="fa fa-pencil"></i>
+                        </button>
+                        <button class="deleteItem text-red-500 hover:text-red-600 p-1" data-id="${item.id}" title="删除">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </div>
+                `;
+                adminListEl.appendChild(itemEl);
+            });
+            
+            // 添加编辑和删除事件监听
+            document.querySelectorAll('.editItem').forEach(btn => {
+                btn.addEventListener('click', handleEditItem);
+            });
+            
+            document.querySelectorAll('.deleteItem').forEach(btn => {
+                btn.addEventListener('click', handleDeleteItem);
+            });
+        }
+        
+        // 添加签内容
+        function handleAddDrawItem() {
+            const inputEl = document.getElementById('drawItemContent');
+            const content = inputEl.value.trim();
+            
+            if (!content) {
+                inputEl.classList.add('border-red-500', 'shake');
+                setTimeout(() => inputEl.classList.remove('border-red-500', 'shake'), 500);
+                return;
+            }
+            
+            // 检查是否已存在相同内容
+            const exists = drawItems.some(item => item.content === content);
+            if (exists) {
+                alert('该内容已存在');
+                return;
+            }
+            
+            // 创建新签内容
+            const newItem = {
+                id: Date.now(), // 使用时间戳作为唯一ID
+                content: content
+            };
+            
+            drawItems.push(newItem);
+            saveDrawItems();
+            
+            // 更新UI
+            renderAdminDrawItemsList();
+            renderDrawItemsList();
+            
+            // 清空输入框并聚焦
+            inputEl.value = '';
+            inputEl.focus();
+            
+            // 添加成功动画
+            const addButton = document.getElementById('addDrawItem');
+            addButton.classList.add('bg-green-600');
+            setTimeout(() => addButton.classList.remove('bg-green-600'), 300);
+        }
+        
+        // 编辑签内容
+        function handleEditItem(e) {
+            const itemId = parseInt(e.currentTarget.dataset.id);
+            const item = drawItems.find(i => i.id === itemId);
+            
+            if (!item) return;
+            
+            const newContent = prompt('修改翻牌内容', item.content);
+            if (newContent === null) return; // 用户取消
+            
+            const trimmedContent = newContent.trim();
+            if (!trimmedContent) {
+                alert('翻牌内容不能为空');
+                return;
+            }
+            
+            // 检查是否已存在相同内容（排除当前编辑的）
+            const exists = drawItems.some(i => i.id !== itemId && i.content === trimmedContent);
+            if (exists) {
+                alert('该翻牌内容已存在');
+                return;
+            }
+            
+            item.content = trimmedContent;
+            saveDrawItems();
+            
+            // 更新UI
+            renderAdminDrawItemsList();
+            renderDrawItemsList();
+        }
+        
+        // 删除签内容
+        function handleDeleteItem(e) {
+            const itemId = parseInt(e.currentTarget.dataset.id);
+            const item = drawItems.find(i => i.id === itemId);
+            
+            if (item && confirm(`确定要删除"${item.content}"吗？`)) {
+                drawItems = drawItems.filter(i => i.id !== itemId);
+                saveDrawItems();
+                
+                // 更新UI
+                renderAdminDrawItemsList();
+                renderDrawItemsList();
+            }
+        }
+        
+        // 清空所有签内容
+        function handleClearAllItems() {
+            if (drawItems.length === 0) {
+                alert('没有可清空的翻牌内容');
+                return;
+            }
+            
+            if (confirm('确定要清空所有翻牌内容吗？此操作不可恢复。')) {
+                drawItems = [];
+                saveDrawItems();
+                
+                // 更新UI
+                renderAdminDrawItemsList();
+                renderDrawItemsList();
+            }
+        }
+        
+        // 执行抽签
+        function performDraw() {
+            const drawButton = document.getElementById('drawButton');
+            const resultEl = document.getElementById('drawResult');
+            
+            // 检查是否有签内容
+            if (drawItems.length === 0) {
+                alert('请先添加签内容');
+                return;
+            }
+            
+            // 禁用按钮防止重复点击
+            drawButton.disabled = true;
+            drawButton.classList.add('opacity-70', 'cursor-not-allowed');
+            
+            // 清空结果区域并添加动画
+            resultEl.innerHTML = '<div class="animate-spin"><i class="fa fa-circle-o-notch text-primary text-4xl"></i></div>';
+            
+            // 模拟抽签过程
+            let iterations = 0;
+            const maxIterations = 25; // 抽签动画迭代次数
+            
+            const drawInterval = setInterval(() => {
+                // 随机选择一个签
+                const randomIndex = Math.floor(Math.random() * drawItems.length);
+                const randomItem = drawItems[randomIndex];
+                
+                // 更新显示
+                resultEl.innerHTML = `<p class="text-xl md:text-3xl font-bold text-primary">${randomItem.content}</p>`;
+                
+                iterations++;
+                
+                // 结束抽签
+                if (iterations >= maxIterations) {
+                    clearInterval(drawInterval);
+                    resultEl.classList.add('draw-animation');
+                    
+                    // 动画结束后恢复按钮状态
+                    setTimeout(() => {
+                        drawButton.disabled = false;
+                        drawButton.classList.remove('opacity-70', 'cursor-not-allowed');
+                        resultEl.classList.remove('draw-animation');
+                    }, 1000);
+                }
+            }, 80); // 每80毫秒切换一次
+        }
+        
+        // 切换到设置页面
+        function showSettings() {
+            document.getElementById('drawingArea').classList.add('hidden');
+            document.getElementById('settingsArea').classList.remove('hidden');
+            renderAdminDrawItemsList();
+            document.getElementById('drawItemContent').focus();
+        }
+        
+        // 切换到抽签页面
+        function showDrawingArea() {
+            document.getElementById('settingsArea').classList.add('hidden');
+            document.getElementById('drawingArea').classList.remove('hidden');
+        }
+        
+        // 初始化事件监听
+        function initEventListeners() {
+            // 抽签按钮
+            document.getElementById('drawButton').addEventListener('click', performDraw);
+            
+            // 切换到设置页面
+            document.getElementById('toggleSettings').addEventListener('click', showSettings);
+            
+            // 返回抽签页面
+            document.getElementById('backToDraw').addEventListener('click', showDrawingArea);
+            
+            // 添加签内容
+            document.getElementById('addDrawItem').addEventListener('click', handleAddDrawItem);
+            
+            // 按Enter键添加签内容
+            document.getElementById('drawItemContent').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    handleAddDrawItem();
+                }
+            });
+            
+            // 清空所有签内容
+            document.getElementById('clearAllItems').addEventListener('click', handleClearAllItems);
+        }
+        
+        // 初始化应用
+        function initApp() {
+            renderDrawItemsList();
+            initEventListeners();
+        }
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>
+    
