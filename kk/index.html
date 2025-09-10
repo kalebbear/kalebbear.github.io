@@ -100,6 +100,9 @@
             <div class="mb-10">
                 <h3 class="text-xl font-bold mb-4 flex items-center text-dark/80">
                     <i class="fa fa-tags mr-2 text-secondary"></i> 翻牌内容列表
+                    <button id="resetItems" style="margin-left:20px" class="bg-accent hover:bg-accent/90 text-white font-bold py-2 px-3 rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 hover:-translate-y-1 active:translate-y-0 text-lg flex items-center">
+                        </i> 重置选项
+                    </button>
                 </h3>
                 <div id="drawItemsList" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
                     <!-- 签内容列表将通过JS动态生成 -->
@@ -149,27 +152,55 @@
 
     <footer class="bg-dark/5 text-dark/60 py-6 mt-16">
         <div class="container mx-auto px-4 text-center">
-            <p>KK翻牌程序 &copy; 2023</p>
+            <p>KK翻牌程序 &copy; 2025</p>
             <p class="text-sm mt-1">每个牌被翻到的概率完全相同</p>
         </div>
     </footer>
 
     <script>
+
+        let olist = [
+                { id: 0, content: '巴比客优烧烤' },
+                { id: 2, content: '刘记碳烤肉' },
+                { id: 3, content: '玖等烤肉' },
+                { id: 4, content: '破局烤肉' },
+                { id: 5, content: '西北风' },
+                { id: 6, content: '嚣张花甲' },
+                { id: 1, content: '吃屁' },
+                { id: 7, content: '牛鲜生火锅' },
+                { id: 8, content: '老松滋' },
+                { id: 9, content: '明德砂锅' },
+                { id: 10, content: '胡小煲' },
+                { id: 11, content: '铁板烧（不限）' },
+                { id: 12, content: '汉堡（不限）' },
+                { id: 13, content: '煲仔饭（不限）' },
+                { id: 14, content: '米线（不限）' },
+                { id: 15, content: '麻辣烫（不限）' },
+                { id: 16, content: '东北铁锅炖' },
+                { id: 17, content: '富兰城堡' },
+                { id: 18, content: '紫罗兰' },
+                { id: 19, content: '串串（不限）' },
+                { id: 20, content: '烧烤（不限）' },
+                { id: 21, content: '点点利' },
+                { id: 22, content: '漂亮的饭（不限）' },
+                { id: 23, content: '自己下厨' },
+                { id: 24, content: '路边小吃（不限）' },
+                { id: 24, content: '面条（不限）' },
+            ] 
         // 签内容数据管理
-        let drawItems = JSON.parse(localStorage.getItem('drawItems')) || [
-            { id: 1, content: '吃屁' },
-            { id: 2, content: '刘记碳烤肉' },
-            { id: 3, content: '久等烤肉' },
-            { id: 4, content: '破局' },
-            { id: 5, content: '西北风' },
-            { id: 6, content: '馒头' }
-        ];
+        let drawItems = JSON.parse(localStorage.getItem('drawItems')) || olist;
         
         // 保存签内容到本地存储
         function saveDrawItems() {
             localStorage.setItem('drawItems', JSON.stringify(drawItems));
         }
         
+        function resetItems() {
+            console.log(1)
+            localStorage.setItem('drawItems', JSON.stringify(olist));
+            window.location.reload()
+        }
+
         // 渲染签内容列表（预览用）
         function renderDrawItemsList() {
             const listEl = document.getElementById('drawItemsList');
@@ -360,7 +391,7 @@
             
             // 模拟抽签过程
             let iterations = 0;
-            const maxIterations = 25; // 抽签动画迭代次数
+            const maxIterations = 50; // 抽签动画迭代次数
             
             const drawInterval = setInterval(() => {
                 // 随机选择一个签
@@ -424,6 +455,8 @@
             
             // 清空所有签内容
             document.getElementById('clearAllItems').addEventListener('click', handleClearAllItems);
+
+            document.getElementById('resetItems').addEventListener('click', resetItems);
         }
         
         // 初始化应用
